@@ -1,0 +1,162 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Generat_Random_GUIDs" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="out_GUID" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1139,1300</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Generat_Random_GUIDs_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Generat_Random_GUIDs" sap:VirtualizedContainerService.HintSize="512,1235" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Free Online GUID Generator" sap:VirtualizedContainerService.HintSize="450,1147" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="a886a47f-1b6c-49a6-a174-348b1c6c802e" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,907" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT txtCount'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="a886a47f-1b6c-49a6-a174-348b1c6c802e" Text="1" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.guidgenerator.com/online-guid-generator.aspx?v=12" CvElementArea="406, 237, 107, 25" CvType="InputBox" DesignTimeRectangle="408, 238, 104, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='txtCount' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txtCount' tag='INPUT' type='text' class='txtCount' aaname='' /&gt;" Guid="58f368dd-2a00-4fd5-82f8-b595852ee425" InformativeScreenshot="dfd72067f7e18055f0e7f6d1f58a2985.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Online GUID Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Generate some GUIDs!'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a886a47f-1b6c-49a6-a174-348b1c6c802e" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.guidgenerator.com/online-guid-generator.aspx?v=12" CvElementArea="96, 333, 204, 34" CvTextArea="112, 343, 171, 14" CvTextArgument="Generate some GUIDs!" CvType="Button" DesignTimeRectangle="98, 335, 201, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='btnGenerate' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnGenerate' tag='INPUT' type='submit' class='button2' aaname='Generate some GUIDs!' check:text='Generate some GUIDs!' /&gt;" Guid="eaa205b6-f930-440f-834f-eab8b324fc2c" InformativeScreenshot="943accb468271085c43f2f2352c2e2c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Online GUID Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Results'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="a886a47f-1b6c-49a6-a174-348b1c6c802e" TextString="[out_GUID]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.guidgenerator.com/online-guid-generator.aspx?v=12" DesignTimeRectangle="98, 421, 687, 158" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='txtResults' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txtResults' tag='TEXTAREA' type='' class='txtResults' aaname='' /&gt;" Guid="0b3a7b66-baa1-4f64-bc60-6a5ecd1a58f1" InformativeScreenshot="002455b45fc9c7a21bf32a387c168614.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Free Online GUID Generator' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="98, 390, 66, 15" CvTextArgument="Results:" CvType="Text" DesignTimeRectangle="98, 389, 72, 18" FullSelectorArgument="&lt;webctrl tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='B' type='' class='' aaname='Results:          ' check:innerText='Results:' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;GUIDs : &quot; + out_GUID]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1096" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIOSURBVDhPrc9NSNNhHMDxXQqEaWBIeNjJ6CAdEoKCSLpYQRmDoTI6NOjNt0Sq/edW5povLV1uvThKJMWsQxexLJSUidKaW7Om/re2ZM5t6rAywd5u32ImhoVT6Ht5nh8Pzwd+kv/a3Pw3gtPz/B43XqHJzr4zA4zOfd0YMh6dwxFdQFkX4VjVJ3QPQjwanqWw/iWe8Oe1MeGeg8OCA0W1D4V+nIOlXeRecnCkYorsUhdNXe61AfNjN/mGCHn6aTL2KpGmypBl5XFU8KLpCK1vlWudMXLKX7FlaybpqVKS0zI5VGZHaJ+OA8LQbXTOW/H74AcR9eBN+mOeJVycWaDIMoG8KspuuZG07fvJyq0izxAlVzvDySYXV/z30U42cDlgRS2aOOvU0+HtXQLMTzxkn7OjMPhRXA1TUBtEWTNF4R0fKquHkuc2DKFmirt15FTLKerXcn70OvYF38p67b0iE19+0GaLceDCe07Uexn9vkjF67toAhbUI0a27ZKRtCmJ9D0yLrrrqQ200Pru6QqynKp6iLrWt/GHxvFWdAEzZUOVJMtSkG5OJiUjFcHeQLnPyPEezd/A6jpnnajHGlE0qdiRv5OCllNoxyw0B7t5FnElBh76+yj1GBACN9D4GtEFTVSK1sQfl2sTezjdZ6Br1s6LRQ/FwzWU2IzrB1Y3EH7DyMfJfwP86s8zcRLJT3gGTuG6uSEQAAAAAElFTkSuQmCC" InformativeScreenshot="e11f30c402005ca9b2b7c93a4a361304.jpg" Selector="&lt;html app='chrome.exe' title='Free Online GUID Generator' /&gt;" Title="Free Online GUID Generator" Url="https://www.guidgenerator.com/online-guid-generator.aspx?v=12" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

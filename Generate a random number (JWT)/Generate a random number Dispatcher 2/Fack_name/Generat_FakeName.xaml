@@ -1,0 +1,424 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Generat_FakeName" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Gender" Type="InArgument(x:String)" />
+    <x:Property Name="in_NameSet" Type="InArgument(x:String)" />
+    <x:Property Name="in_Country" Type="InArgument(x:String)" />
+    <x:Property Name="out_dtInformations" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="in_GUID" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1139,5681</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Generat_FakeName_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Azure.Models</x:String>
+      <x:String>UiPath.Azure.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Azure</AssemblyReference>
+      <AssemblyReference>UiPath.Azure.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Generat_FakeName" sap:VirtualizedContainerService.HintSize="604,5616" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Generate a Random Name - Random, Arabic, Tunisia - Fake Name Generator" sap:VirtualizedContainerService.HintSize="542,5528" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b61a6f34-9959-412e-aa0e-e3d4feeb941d" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,5288" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Name" />
+              <Variable x:TypeArguments="x:String" Name="FirstName" />
+              <Variable x:TypeArguments="x:String" Name="LastName" />
+              <Variable x:TypeArguments="x:String" Name="MotherName" />
+              <Variable x:TypeArguments="x:String" Name="Phone" />
+              <Variable x:TypeArguments="x:String" Name="CountryCode" />
+              <Variable x:TypeArguments="x:String" Name="BirthDay" />
+              <Variable x:TypeArguments="x:String" Name="Company" />
+              <Variable x:TypeArguments="x:String" Name="FavoriteColor" />
+              <Variable x:TypeArguments="x:String" Name="EmailAddress" />
+              <Variable x:TypeArguments="x:String" Name="Password" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NSelectItem DisplayName="Select Item 'Gender'" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[in_Gender]" ScopeIdentifier="b61a6f34-9959-412e-aa0e-e3d4feeb941d" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="3">
+                  <x:String>Random</x:String>
+                  <x:String>Male</x:String>
+                  <x:String>Female</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-ar-tn.php" CvElementArea="623, 391, 253, 34" CvType="InputBox" DesignTimeRectangle="624, 393, 250, 31" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='gen' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='gen' tag='SELECT' type='' class='' aaname='Gender' /&gt;" Guid="d979a502-6495-4a8e-8168-1a0d1d5aec49" InformativeScreenshot="b6eaa4bc87c295bd2eb83eff7558506f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Random, Arabic, Tunisia - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="548, 396, 67, 17" CvTextArgument="Gender" CvType="Text" DesignTimeRectangle="549, 394, 64, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Gender' check:innerText='Gender' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Name set'" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[in_NameSet]" ScopeIdentifier="b61a6f34-9959-412e-aa0e-e3d4feeb941d" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="37">
+                  <x:String>American</x:String>
+                  <x:String>Arabic</x:String>
+                  <x:String>Australian</x:String>
+                  <x:String>Brazil</x:String>
+                  <x:String>Chechen (Latin)</x:String>
+                  <x:String>Chinese</x:String>
+                  <x:String>Chinese (Traditional)</x:String>
+                  <x:String>Croatian</x:String>
+                  <x:String>Czech</x:String>
+                  <x:String>Danish</x:String>
+                  <x:String>Dutch</x:String>
+                  <x:String>England/Wales</x:String>
+                  <x:String>Eritrean</x:String>
+                  <x:String>Finnish</x:String>
+                  <x:String>French</x:String>
+                  <x:String>German</x:String>
+                  <x:String>Greenland</x:String>
+                  <x:String>Hispanic</x:String>
+                  <x:String>Hobbit</x:String>
+                  <x:String>Hungarian</x:String>
+                  <x:String>Icelandic</x:String>
+                  <x:String>Igbo</x:String>
+                  <x:String>Italian</x:String>
+                  <x:String>Japanese</x:String>
+                  <x:String>Japanese (Anglicized)</x:String>
+                  <x:String>Klingon</x:String>
+                  <x:String>Ninja</x:String>
+                  <x:String>Norwegian</x:String>
+                  <x:String>Persian</x:String>
+                  <x:String>Polish</x:String>
+                  <x:String>Russian</x:String>
+                  <x:String>Russian (Cyrillic)</x:String>
+                  <x:String>Scottish</x:String>
+                  <x:String>Slovenian</x:String>
+                  <x:String>Swedish</x:String>
+                  <x:String>Thai</x:String>
+                  <x:String>Vietnamese</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-ar-tn.php" CvElementArea="622, 432, 253, 34" CvType="InputBox" DesignTimeRectangle="624, 434, 250, 31" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='n' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='n' tag='SELECT' type='' class='' aaname='Name set' /&gt;" Guid="75a27896-6980-45cb-b29e-99a95351dd3d" InformativeScreenshot="7a58486a5241a048b8e2fcb9bb1677ea.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Random, Arabic, Tunisia - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="529, 438, 86, 16" CvTextArgument="Name set" CvType="Text" DesignTimeRectangle="530, 435, 83, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Name set' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Name set' tag='LABEL' type='' class='' check:innerText='Name set' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Country'" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[in_Country]" ScopeIdentifier="b61a6f34-9959-412e-aa0e-e3d4feeb941d" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="31">
+                  <x:String>Australia</x:String>
+                  <x:String>Austria</x:String>
+                  <x:String>Belgium</x:String>
+                  <x:String>Brazil</x:String>
+                  <x:String>Canada</x:String>
+                  <x:String>Cyprus (Anglicized)</x:String>
+                  <x:String>Cyprus (Greek)</x:String>
+                  <x:String>Czech Republic</x:String>
+                  <x:String>Denmark</x:String>
+                  <x:String>Estonia</x:String>
+                  <x:String>Finland</x:String>
+                  <x:String>France</x:String>
+                  <x:String>Germany</x:String>
+                  <x:String>Greenland</x:String>
+                  <x:String>Hungary</x:String>
+                  <x:String>Iceland</x:String>
+                  <x:String>Italy</x:String>
+                  <x:String>Netherlands</x:String>
+                  <x:String>New Zealand</x:String>
+                  <x:String>Norway</x:String>
+                  <x:String>Poland</x:String>
+                  <x:String>Portugal</x:String>
+                  <x:String>Slovenia</x:String>
+                  <x:String>South Africa</x:String>
+                  <x:String>Spain</x:String>
+                  <x:String>Sweden</x:String>
+                  <x:String>Switzerland</x:String>
+                  <x:String>Tunisia</x:String>
+                  <x:String>United Kingdom</x:String>
+                  <x:String>United States</x:String>
+                  <x:String>Uruguay</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-ar-tn.php" CvElementArea="622, 473, 254, 34" CvType="InputBox" DesignTimeRectangle="624, 475, 250, 31" DesignTimeScaleFactor="1.25" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='c' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='c' tag='SELECT' type='' class='' aaname='Country' /&gt;" Guid="18f95c54-76db-454e-ab2a-30cc3fa87266" InformativeScreenshot="f8caeab25708512e37adc110ac889948.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Random, Arabic, Tunisia - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="542, 479, 73, 20" CvTextArgument="Country" CvType="Text" DesignTimeRectangle="543, 476, 70, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Country' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Country' tag='LABEL' type='' class='' check:innerText='Country' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Generate'" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b61a6f34-9959-412e-aa0e-e3d4feeb941d" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-ar-tn.php" CvElementArea="622, 513, 93, 33" CvTextArea="631, 522, 75, 15" CvTextArgument="Generate" CvType="Button" DesignTimeRectangle="624, 516, 89, 28" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='genbtn' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='genbtn' tag='INPUT' type='submit' class='button red' aaname='Generate' check:text='Generate' /&gt;" Guid="41f1ba49-6d8c-4245-a9b3-8cef83c1135b" InformativeScreenshot="d22cab71fe3893cb40fdb53c7c8e83a0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Random, Arabic, Tunisia - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text ''Ubaab Rashida Fakhoury'" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="b61a6f34-9959-412e-aa0e-e3d4feeb941d" TextString="[Name]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-ar-tn.php" CvTextArea="744, 600, 272, 24" CvType="AnyWordGroup" DesignTimeRectangle="744, 599, 675, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='' /&gt;" Guid="0ae21f99-60f1-45a2-bcd5-c74c83d54402" InformativeScreenshot="bae54a57049f9aa04360ee9c853f6330.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Random, Arabic, Tunisia - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="622, 513, 93, 33" CvTextArea="631, 522, 75, 15" CvTextArgument="Generate" CvType="Button" DesignTimeRectangle="624, 516, 89, 28" ElementType="Button" FullSelectorArgument="&lt;webctrl id='genbtn' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='genbtn' tag='INPUT' type='submit' class='button red' aaname='Generate' check:text='Generate' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Full name : &quot; + Name]" />
+            <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[FirstName]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[Name.Split(" ")(0)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;First name : &quot; + FirstName]" />
+            <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[LastName]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[Name.Split(" ").Last()]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Last name : &quot; + LastName]" />
+            <uix:NGetText DisplayName="Get Text 'Mother's maiden name'" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="b61a6f34-9959-412e-aa0e-e3d4feeb941d" TextString="[MotherName]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-ar-tn.php" CvTextArea="975, 399, 64, 20" CvType="AnyWordGroup" DesignTimeRectangle="976, 396, 443, 25" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DD' type='' class='' /&gt;" Guid="bc889dfb-fc22-45ef-a008-21f1a0b769c5" InformativeScreenshot="d02f2d46ba8cbd75e7a8fac80bb3bc7f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Random, Arabic, Tunisia - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="744, 399, 202, 17" CvTextArgument="Mother's maiden name" CvType="Text" DesignTimeRectangle="744, 396, 213, 25" FullSelectorArgument="&lt;webctrl tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DT' type='' class='' aaname='Mother&amp;apos;s maiden name' check:innerText='Mother&amp;apos;s maiden name' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Mother name : &quot;  + MotherName]" />
+            <uix:NGetText DisplayName="Get Text 'Phone'" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="b61a6f34-9959-412e-aa0e-e3d4feeb941d" TextString="[Phone]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-ar-tn.php" CvTextArea="975, 856, 89, 16" CvType="AnyWordGroup" DesignTimeRectangle="976, 852, 443, 25" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl idx='2' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='' /&gt;" Guid="b8d1de14-9d52-452e-8b86-5956faf1beec" InformativeScreenshot="de3d50ae2991c13e3e58ae4fc801067a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Random, Arabic, Tunisia - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="744, 856, 56, 16" CvTextArgument="Phone" CvType="Text" DesignTimeRectangle="744, 852, 213, 25" FullSelectorArgument="&lt;webctrl idx='3' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Phone' check:innerText='Phone' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Phone : &quot; + Phone]" />
+            <uix:NGetText DisplayName="Get Text 'Country code'" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="b61a6f34-9959-412e-aa0e-e3d4feeb941d" TextString="[CountryCode]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-ar-tn.php" CvTextArea="975, 888, 30, 16" CvType="AnyWordGroup" DesignTimeRectangle="976, 884, 443, 25" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl idx='3' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='' /&gt;" Guid="8949410c-b300-42d2-88e9-706223fbddf2" InformativeScreenshot="6320800e8ac38e8d46d2a58a98555b7f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Random, Arabic, Tunisia - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="743, 887, 119, 21" CvTextArgument="Country code" CvType="Text" DesignTimeRectangle="744, 884, 213, 25" FullSelectorArgument="&lt;webctrl idx='4' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Country code' check:innerText='Country code' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Country Code : &quot; + CountryCode]" />
+            <uix:NGetText DisplayName="Get Text 'Birthday'" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="b61a6f34-9959-412e-aa0e-e3d4feeb941d" TextString="[BirthDay]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-ar-tn.php" CvTextArea="975, 271, 143, 21" CvType="AnyWordGroup" DesignTimeRectangle="976, 268, 443, 25" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl idx='4' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='' /&gt;" Guid="f338cce3-04a6-4768-a8b6-a8e1d67170cb" InformativeScreenshot="ad9860d0f792451e8eb6d2add4743b82.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Random, Arabic, Tunisia - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="744, 271, 77, 21" CvTextArgument="Birthday" CvType="Text" DesignTimeRectangle="744, 268, 213, 25" FullSelectorArgument="&lt;webctrl idx='5' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Birthday' check:innerText='Birthday' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;BirthDay : &quot; + BirthDay]" />
+            <uix:NGetText DisplayName="Get Text 'Company'" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="b61a6f34-9959-412e-aa0e-e3d4feeb941d" TextString="[Company]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-ar-tn.php" CvTextArea="974, 474, 118, 17" CvType="AnyWordGroup" DesignTimeRectangle="976, 471, 443, 25" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl idx='14' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='' /&gt;" Guid="d7bf4e56-ab2d-4fe6-b93d-fce421d80ca6" InformativeScreenshot="9ae3fc36d40ccc222f59aa4babfe7638.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Random, Arabic, Tunisia - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="743, 475, 85, 20" CvTextArgument="Company" CvType="Text" DesignTimeRectangle="744, 471, 213, 25" FullSelectorArgument="&lt;webctrl idx='16' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Company' check:innerText='Company' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Company : &quot; + Company]" />
+            <uix:NGetText DisplayName="Get Text 'Favorite color'" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="b61a6f34-9959-412e-aa0e-e3d4feeb941d" TextString="[FavoriteColor]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-ar-tn.php" CvTextArea="975, 567, 50, 21" CvType="AnyWordGroup" DesignTimeRectangle="976, 564, 443, 25" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl idx='22' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='' /&gt;" Guid="15d28e51-cfa4-4437-ad37-0a3d7bd5f633" InformativeScreenshot="f7e8a234498eaa75fbc2c274944590e5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Random, Arabic, Tunisia - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="744, 567, 123, 17" CvTextArgument="Favorite color" CvType="Text" DesignTimeRectangle="744, 564, 213, 25" FullSelectorArgument="&lt;webctrl idx='24' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Favorite color' check:innerText='Favorite color' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Favorite Color : &quot; + FavoriteColor]" />
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Email address'" sap:VirtualizedContainerService.HintSize="434,147" sap2010:WorkflowViewState.IdRef="GetValue_1">
+              <ui:GetValue.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="58925058-4696-4e9e-9482-e8f0288e8a3c" InformativeScreenshot="0076c1f9ebb3e355f33448becf9dcfe3" Selector="&lt;webctrl tag='DD' idx='8' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:GetValue.Target>
+              <ui:GetValue.Value>
+                <OutArgument x:TypeArguments="x:String">[EmailAddress]</OutArgument>
+              </ui:GetValue.Value>
+            </ui:GetValue>
+            <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[EmailAddress]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[EmailAddress.Split(New String() {" "}, StringSplitOptions.None)(0)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Email Adress : &quot; + EmailAddress]" />
+            <uix:NGetText DisplayName="Get Text 'Password'" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="b61a6f34-9959-412e-aa0e-e3d4feeb941d" TextString="[Password]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/gen-random-ar-tn.php" CvTextArea="974, 478, 104, 21" CvType="AnyWordGroup" DesignTimeRectangle="976, 475, 443, 25" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl idx='8' isleaf='1' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DD' class='' /&gt;" Guid="cdf24365-d9a4-4c25-83c2-13d6a06803ac" InformativeScreenshot="06b08cdfd011fd9600a275a3849a8b9c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Random, Arabic, Tunisia - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="744, 478, 86, 17" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="744, 475, 213, 25" FullSelectorArgument="&lt;webctrl idx='10' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='' aaname='Password' check:innerText='Password' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Password : &quot; + Password]" />
+            <ui:BuildDataTable DataTable="[out_dtInformations]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,100" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;First_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Last_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Mother_x0027_s_x0020_Maiden_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Phone&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Counter_x0020_Code&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;BirthDay&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Company&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Favorite_x0020_Color&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Email_x0020_Address&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Password&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;GUID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[new Object() {FirstName, LastName, MotherName, Phone, CountryCode, BirthDay, Company, FavoriteColor, EmailAddress, Password, in_GUID}]" DataTable="[out_dtInformations]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,211" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1096" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH3wUcFjkjSdtABwAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJZSURBVEhL7ZbNb9JwGMc9LEoLPynQMrPJyfuSGQ1/gHFuNKKXZdH9DR486nT/wLTiX2C8Gu+e1ADjxUWCQBkQylsBx4tTNFmKdr48oxf4tWsLk4ux+ZzK830+pf097e/UPmKmCi74hJgOYlo2em9MIAJBiGMNRwTwcxsxNWq2MOvh3Z6M25M2AZRBMUQgCHHMgQtEwlG+6vsajvRi8V7UNLH4t+1IeYmFuJ6gixjBQuVXb/+U5d9jHr9kOb+2DnFoMtwTFxQs9sxEAojwa+sQNxakV29NV5CZSDDWLdIQNILhxL0H/Mbmrha5jc3S/Yf5hcui1WnwkI8TZLe4VzPkzpmzCS2SFnvWYq9aXS39ZaojKD0OvCcoEWYKMR9VwElobTxoOoLioyfvTqMy6aiTTnEUONMknW0bjd19BbMC4dnz4MKlD4vejIrsRW9x0Vt1e+BtMfk/kA8OpHa73+58V9Pp9MW6sMTWVGMMmBXoH4eSxLM3S6o1Cvw1QYq9UZyqIH1CAZyRJUmTQ6n/40svt+KvECcQCC9evr7Gxlf8Oz6chM/PL18vnL/QtLkmf8i5Le7NjDU1mFiMnIUSCKphc8GgDXdTMCsoc4EkQTXR0XdRE7h29eUDZgUVLpAiKHgfDNeb4b/AkH9PAOO+q7WrqHFPeYKCfdVwvRlwQZVwFK4s778NdkPbnVAY6IbCnyPRyp27RdIB63243gwjApiUPUQX7e4kPR+j5yIDovRcgp7PO841jvlm6TMiAKBFC9HQq3aES6E+2N4q44rVG4ILFJS5x8BqTIGYP0HPVXjjInEIAAAAAElFTkSuQmCC" InformativeScreenshot="d8051111c5eccad4dbdb516726da80fb.jpg" Selector="&lt;html app='chrome.exe' title='Generate a Random Name - Random, Arabic, Tunisia - Fake Name Generator' /&gt;" Title="Generate a Random Name - Random, Arabic, Tunisia - Fake Name Generator" Url="https://www.fakenamegenerator.com/gen-random-ar-tn.php" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

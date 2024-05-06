@@ -1,0 +1,558 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Generate_JWT" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_FirstName" Type="InArgument(x:String)" />
+    <x:Property Name="in_LastName" Type="InArgument(x:String)" />
+    <x:Property Name="in_MotherName" Type="InArgument(x:String)" />
+    <x:Property Name="in_Phone" Type="InArgument(x:String)" />
+    <x:Property Name="in_CountryCode" Type="InArgument(x:String)" />
+    <x:Property Name="in_BirthDay" Type="InArgument(x:String)" />
+    <x:Property Name="in_Combany" Type="InArgument(x:String)" />
+    <x:Property Name="in_FavColor" Type="InArgument(x:String)" />
+    <x:Property Name="in_Email" Type="InArgument(x:String)" />
+    <x:Property Name="in_Password" Type="InArgument(x:String)" />
+    <x:Property Name="in_GUID" Type="InArgument(x:String)" />
+    <x:Property Name="out_JWT" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1139,9096</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Generate_JWT_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Generate_JWT" sap:VirtualizedContainerService.HintSize="512,9031" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard DisplayName="Use Browser Chrome: Online JWT Builder - Jamie Kurtz" sap:VirtualizedContainerService.HintSize="450,8943" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="77809483-b736-4dd5-9e75-cae7ab6db7b6">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,8703" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'clear all'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="973, 530, 57, 24" CvTextArea="979, 534, 44, 13" CvTextArgument="clear all" CvType="Button" DesignTimeRectangle="974, 531, 54, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='clear all' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='clear all' tag='BUTTON' type='button' class='btn btn-success btn-xs' check:innerText='clear all' /&gt;" Guid="29fe0f6f-fbda-4c3b-92c4-83a5c4941b88" InformativeScreenshot="b9e8e31a2d7cdbccf57c2a9ea397b8ad.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="418, 332, 112, 13" CvTextArgument="Additional Claims" CvType="Text" DesignTimeRectangle="406, 319, 1108, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl class='panel-heading' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel-heading' type='' tag='DIV' aaname='                     Additional Claims                 ' check:innerText='Additional Claims' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'add one'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="1030, 629, 58, 25" CvTextArea="1036, 634, 46, 12" CvTextArgument="add one" CvType="Button" DesignTimeRectangle="1032, 630, 55, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' type='button' class='btn btn-success btn-xs' check:innerText='add one' /&gt;" Guid="492515e0-14ec-46d2-92d3-65c9cee391f0" InformativeScreenshot="4426f1ce8fe52d089e0532e092e4d147.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="418, 431, 112, 13" CvTextArgument="Additional Claims" CvType="Text" DesignTimeRectangle="406, 418, 1108, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl class='panel-heading' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel-heading' type='' tag='DIV' aaname='                     Additional Claims                 ' check:innerText='Additional Claims' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Claim Type'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="First Name" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="505, 523, 138, 38" CvType="InputBox" DesignTimeRectangle="508, 525, 134, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" Guid="a46e5b83-19c1-4534-924e-19edfc793a2a" InformativeScreenshot="88ff91445d54d172686b25445c32276c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="507, 490, 76, 16" CvTextArgument="Claim Type" CvType="Text" DesignTimeRectangle="500, 479, 150, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='Claim Type' check:innerText='Claim Type' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="[in_FirstName]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="656, 523, 245, 38" CvType="InputBox" DesignTimeRectangle="658, 525, 242, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' class='form-control' tag='INPUT' aaname='' /&gt;" Guid="72dc8188-57e9-49b4-9271-550562add7b4" InformativeScreenshot="44a0e453b0a7caca94214f7972a25138.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="506, 523, 137, 37" CvType="InputBox" DesignTimeRectangle="508, 525, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'add one'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="1030, 629, 58, 25" CvTextArea="1036, 634, 46, 12" CvTextArgument="add one" CvType="Button" DesignTimeRectangle="1032, 630, 55, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' type='button' class='btn btn-success btn-xs' check:innerText='add one' /&gt;" Guid="5fafab9b-4c69-4c49-a0ee-a9d6e4945b45" InformativeScreenshot="527d4b3581a60a95862d7806a802010c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="418, 431, 112, 13" CvTextArgument="Additional Claims" CvType="Text" DesignTimeRectangle="406, 418, 1108, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl class='panel-heading' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel-heading' type='' tag='DIV' aaname='                     Additional Claims                 ' check:innerText='Additional Claims' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="Last Name" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="506, 574, 138, 37" CvType="InputBox" DesignTimeRectangle="508, 576, 134, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" Guid="de197067-222b-4d76-8a23-5da55f781604" InformativeScreenshot="15faae9f745635c2b056ec580317d839.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                      <uix:Target CvElementArea="506, 523, 137, 37" CvType="InputBox" DesignTimeRectangle="508, 525, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      <uix:Target CvTextArea="418, 431, 112, 13" CvTextArgument="Additional Claims" CvType="Text" DesignTimeRectangle="418, 431, 112, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl class='panel-heading' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel-heading' type='' tag='DIV' aaname='                     Additional Claims                 ' check:innerText='Additional Claims' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Claim Type'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="[in_LastName]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="656, 574, 246, 38" CvType="InputBox" DesignTimeRectangle="650, 568, 258, 50" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='3' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' aaname='                                                                              ' /&gt;" Guid="dc324525-a37f-4642-a58c-ed4f5fd35121" InformativeScreenshot="5574be7a79562b09e96d75cd456c3d71.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                      <uix:Target CvTextArea="507, 490, 76, 16" CvTextArgument="Claim Type" CvType="Text" DesignTimeRectangle="500, 479, 150, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='Claim Type' check:innerText='Claim Type' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      <uix:Target CvElementArea="506, 574, 137, 37" CvType="InputBox" DesignTimeRectangle="508, 576, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'add one'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="1030, 629, 58, 25" CvTextArea="1036, 634, 46, 12" CvTextArgument="add one" CvType="Button" DesignTimeRectangle="1032, 630, 55, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' type='button' class='btn btn-success btn-xs' check:innerText='add one' /&gt;" Guid="49c1f3b0-3d5f-42ca-8433-9c34630da64f" InformativeScreenshot="28958ae6bbe48f569451b82076ba274e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="418, 431, 112, 13" CvTextArgument="Additional Claims" CvType="Text" DesignTimeRectangle="406, 418, 1108, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl class='panel-heading' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel-heading' type='' tag='DIV' aaname='                     Additional Claims                 ' check:innerText='Additional Claims' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Claim Type'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="Mother's Maiden Name" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="506, 625, 138, 38" CvType="InputBox" DesignTimeRectangle="508, 627, 134, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" Guid="9bef41d5-308b-458a-9263-c78cda52fff9" InformativeScreenshot="e650a703974029526cccf4f4b56e1146.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="507, 490, 76, 16" CvTextArgument="Claim Type" CvType="Text" DesignTimeRectangle="500, 479, 150, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='Claim Type' check:innerText='Claim Type' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="[in_MotherName]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="656, 625, 245, 38" CvType="InputBox" DesignTimeRectangle="658, 627, 242, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' class='form-control' tag='INPUT' aaname='' /&gt;" Guid="eb8e7948-5fb2-47fa-b480-0c3b4e6e7574" InformativeScreenshot="4587391ad70ee38a29409b861503970a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                      <uix:Target CvElementArea="506, 625, 137, 37" CvTextArea="520, 637, 104, 13" CvTextArgument="Mother's Maiden" CvType="Button" DesignTimeRectangle="508, 627, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      <uix:Target CvTextArea="507, 490, 76, 16" CvTextArgument="Claim Type" CvType="Text" DesignTimeRectangle="500, 479, 150, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='Claim Type' check:innerText='Claim Type' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'add one'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="1030, 629, 58, 25" CvTextArea="1036, 634, 46, 12" CvTextArgument="add one" CvType="Button" DesignTimeRectangle="1032, 630, 55, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' type='button' class='btn btn-success btn-xs' check:innerText='add one' /&gt;" Guid="ea26564e-5f13-4fed-9450-9f121247bbcd" InformativeScreenshot="e3a242c14d3e05cf16fba68d73f6531e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="418, 431, 112, 13" CvTextArgument="Additional Claims" CvType="Text" DesignTimeRectangle="406, 418, 1108, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl class='panel-heading' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel-heading' type='' tag='DIV' aaname='                     Additional Claims                 ' check:innerText='Additional Claims' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="Phone" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="505, 676, 138, 38" CvType="InputBox" DesignTimeRectangle="508, 574, 134, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" Guid="5e2b1b30-74ce-489f-80cf-2748c8a69c50" ImageBase64="" InformativeScreenshot="178baaaae63802b4867c576280dc18c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="Selector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="506, 625, 137, 38" CvTextArea="520, 637, 104, 13" CvTextArgument="Mother's Maiden" CvType="Button" DesignTimeRectangle="508, 523, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="[in_Phone]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="656, 676, 246, 37" CvType="InputBox" DesignTimeRectangle="658, 678, 242, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='5' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' class='form-control' tag='INPUT' aaname='' /&gt;" Guid="f1959feb-c249-47c7-82bc-f0abe0d43b3f" ImageBase64="" InformativeScreenshot="c63275f96e6f9df83707638890c5192e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="Selector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="506, 676, 137, 37" CvTextArgument="Value" CvType="InputBox" DesignTimeRectangle="508, 678, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'add one'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="1030, 529, 58, 25" CvTextArea="1036, 534, 46, 12" CvTextArgument="add one" CvType="Button" DesignTimeRectangle="1032, 530, 55, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' type='button' class='btn btn-success btn-xs' check:innerText='add one' /&gt;" Guid="57919307-a4b3-411b-830e-9c97f8d7b2cb" InformativeScreenshot="2a98c630a5bc68b0693ed506dd42fd39.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="418, 331, 112, 13" CvTextArgument="Additional Claims" CvType="Text" DesignTimeRectangle="406, 318, 1108, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl class='panel-heading' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel-heading' type='' tag='DIV' aaname='                     Additional Claims                 ' check:innerText='Additional Claims' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="Country Code" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="506, 627, 137, 37" CvType="InputBox" DesignTimeRectangle="508, 629, 134, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" Guid="a297a594-bfcb-4f79-b346-312cb1d11296" InformativeScreenshot="56ba90af21136ae67f35b539e8ad21ca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="506, 576, 137, 37" CvType="InputBox" DesignTimeRectangle="508, 578, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="[in_CountryCode]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="656, 669, 246, 37" CvType="InputBox" DesignTimeRectangle="658, 671, 242, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='6' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' class='form-control' tag='INPUT' aaname='' /&gt;" Guid="17f493dc-92d6-4fea-8bd4-686be2940976" InformativeScreenshot="c41300db8d9717e125c46c7bf8bfa79e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="506, 669, 137, 37" CvType="InputBox" DesignTimeRectangle="508, 671, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'add one'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="1030, 571, 58, 25" CvTextArea="1036, 576, 46, 12" CvTextArgument="add one" CvType="Button" DesignTimeRectangle="1032, 572, 55, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' type='button' class='btn btn-success btn-xs' check:innerText='add one' /&gt;" Guid="fb65dfc5-64d4-4f34-a9d4-27245c37a9ce" InformativeScreenshot="5fbe5023f034049274f883e3b89239cd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="418, 372, 112, 14" CvTextArgument="Additional Claims" CvType="Text" DesignTimeRectangle="406, 360, 1108, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl class='panel-heading' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel-heading' type='' tag='DIV' aaname='                     Additional Claims                 ' check:innerText='Additional Claims' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="BirthDay" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="506, 720, 138, 38" CvType="InputBox" DesignTimeRectangle="508, 722, 134, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" Guid="f3a77044-1957-4857-935c-007d7687c0bf" InformativeScreenshot="53ded2f12f4299027da5e2209483abd4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="506, 669, 137, 37" CvType="InputBox" DesignTimeRectangle="508, 671, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="[in_BirthDay]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="656, 720, 246, 38" CvType="InputBox" DesignTimeRectangle="658, 722, 242, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='7' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' class='form-control' tag='INPUT' aaname='' /&gt;" Guid="2a33d206-8206-489b-a99e-d3f1f51c2089" InformativeScreenshot="a57a3e6955c3cece3b2cf3aa941a7d2b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="506, 720, 137, 38" CvType="InputBox" DesignTimeRectangle="508, 722, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'add one'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="1030, 571, 58, 25" CvTextArea="1036, 576, 46, 12" CvTextArgument="add one" CvType="Button" DesignTimeRectangle="1032, 572, 55, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' type='button' class='btn btn-success btn-xs' check:innerText='add one' /&gt;" Guid="fb65dfc5-64d4-4f34-a9d4-27245c37a9ce" InformativeScreenshot="5fbe5023f034049274f883e3b89239cd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="418, 372, 112, 14" CvTextArgument="Additional Claims" CvType="Text" DesignTimeRectangle="406, 360, 1108, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl class='panel-heading' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel-heading' type='' tag='DIV' aaname='                     Additional Claims                 ' check:innerText='Additional Claims' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="Company" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="506, 771, 138, 38" CvType="InputBox" DesignTimeRectangle="508, 773, 134, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='8' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" Guid="9204a1d2-2d0c-41d8-88d7-a390525adaed" InformativeScreenshot="550cceef8aff5966ecf4f39bcff9ab10.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="506, 720, 137, 37" CvType="InputBox" DesignTimeRectangle="508, 722, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="[in_Combany]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="656, 771, 245, 37" CvType="InputBox" DesignTimeRectangle="658, 773, 242, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='8' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' class='form-control' tag='INPUT' aaname='' /&gt;" Guid="4d32bde8-35bd-4c1c-a050-cef549938439" InformativeScreenshot="8c2d5186fde4eb05859271f1c83c9022.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="506, 771, 137, 38" CvType="InputBox" DesignTimeRectangle="508, 773, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='8' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'add one'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="1030, 571, 58, 25" CvTextArea="1036, 576, 46, 12" CvTextArgument="add one" CvType="Button" DesignTimeRectangle="1032, 572, 55, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' type='button' class='btn btn-success btn-xs' check:innerText='add one' /&gt;" Guid="fb65dfc5-64d4-4f34-a9d4-27245c37a9ce" InformativeScreenshot="5fbe5023f034049274f883e3b89239cd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="418, 372, 112, 14" CvTextArgument="Additional Claims" CvType="Text" DesignTimeRectangle="406, 360, 1108, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl class='panel-heading' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel-heading' type='' tag='DIV' aaname='                     Additional Claims                 ' check:innerText='Additional Claims' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="Favorite Color" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="506, 735, 138, 37" CvType="InputBox" DesignTimeRectangle="508, 737, 134, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='9' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" Guid="96c653a5-4c1a-4fb0-b41b-faaa0857bb25" InformativeScreenshot="0ef6abe757f65624d235a22b490f2044.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="506, 684, 137, 37" CvType="InputBox" DesignTimeRectangle="508, 686, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='8' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="[in_FavColor]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="656, 735, 246, 37" CvType="InputBox" DesignTimeRectangle="658, 737, 242, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='9' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' class='form-control' tag='INPUT' aaname='' /&gt;" Guid="506dae7d-8558-4a5e-955a-5219060adeeb" InformativeScreenshot="3e33b54cfa8cdc0c7b0d9e67c5b76716.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="506, 735, 137, 37" CvType="InputBox" DesignTimeRectangle="508, 737, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='9' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'add one'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="1030, 571, 58, 25" CvTextArea="1036, 576, 46, 12" CvTextArgument="add one" CvType="Button" DesignTimeRectangle="1032, 572, 55, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' type='button' class='btn btn-success btn-xs' check:innerText='add one' /&gt;" Guid="fb65dfc5-64d4-4f34-a9d4-27245c37a9ce" InformativeScreenshot="5fbe5023f034049274f883e3b89239cd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="418, 372, 112, 14" CvTextArgument="Additional Claims" CvType="Text" DesignTimeRectangle="406, 360, 1108, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl class='panel-heading' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel-heading' type='' tag='DIV' aaname='                     Additional Claims                 ' check:innerText='Additional Claims' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="Email Address" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="506, 786, 138, 38" CvType="InputBox" DesignTimeRectangle="508, 788, 134, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='10' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" Guid="0863a0b1-371b-4fa3-849e-7e86ac68de8c" InformativeScreenshot="b1144bb02ec7d81f9d4010d3ce1d3b4e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="506, 735, 137, 37" CvType="InputBox" DesignTimeRectangle="508, 737, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='9' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="[in_Email]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="656, 787, 245, 37" CvType="InputBox" DesignTimeRectangle="658, 788, 242, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='10' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' class='form-control' tag='INPUT' aaname='' /&gt;" Guid="629b6707-6b25-4890-aa64-debeb7452bf5" InformativeScreenshot="f10625d24f51953dbba02d7868e33833.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="506, 786, 137, 38" CvTextArea="521, 798, 90, 13" CvTextArgument="Email Address" CvType="Button" DesignTimeRectangle="508, 788, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='10' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'add one'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="1030, 571, 58, 25" CvTextArea="1036, 576, 46, 12" CvTextArgument="add one" CvType="Button" DesignTimeRectangle="1032, 572, 55, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' type='button' class='btn btn-success btn-xs' check:innerText='add one' /&gt;" Guid="fb65dfc5-64d4-4f34-a9d4-27245c37a9ce" InformativeScreenshot="5fbe5023f034049274f883e3b89239cd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="418, 372, 112, 14" CvTextArgument="Additional Claims" CvType="Text" DesignTimeRectangle="406, 360, 1108, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl class='panel-heading' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel-heading' type='' tag='DIV' aaname='                     Additional Claims                 ' check:innerText='Additional Claims' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_19" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="Password" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="506, 846, 137, 37" CvType="InputBox" DesignTimeRectangle="508, 848, 134, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='11' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" Guid="1e78b88b-7e65-46d2-a15d-daac2a893a7c" InformativeScreenshot="0c46e1d65a5eff82eb252d3cf9756aed.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="506, 795, 137, 37" CvTextArea="521, 807, 90, 13" CvTextArgument="Email Address" CvType="Button" DesignTimeRectangle="508, 797, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='10' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="[in_Password]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="656, 847, 246, 37" CvType="InputBox" DesignTimeRectangle="658, 848, 242, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='11' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' class='form-control' tag='INPUT' aaname='' /&gt;" Guid="790a655c-d9a5-4182-90ff-8862b117d3d5" InformativeScreenshot="7be16cb0da8bbf2a04f24ab680652b78.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="506, 846, 137, 38" CvType="InputBox" DesignTimeRectangle="508, 848, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='11' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'add one'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="1030, 571, 58, 25" CvTextArea="1036, 576, 46, 12" CvTextArgument="add one" CvType="Button" DesignTimeRectangle="1032, 572, 55, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='add one' tag='BUTTON' type='button' class='btn btn-success btn-xs' check:innerText='add one' /&gt;" Guid="fb65dfc5-64d4-4f34-a9d4-27245c37a9ce" InformativeScreenshot="5fbe5023f034049274f883e3b89239cd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="418, 372, 112, 14" CvTextArgument="Additional Claims" CvType="Text" DesignTimeRectangle="406, 360, 1108, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl class='panel-heading' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel-heading' type='' tag='DIV' aaname='                     Additional Claims                 ' check:innerText='Additional Claims' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_21" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="GUID" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="506, 897, 138, 38" CvType="InputBox" DesignTimeRectangle="508, 899, 134, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='12' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" Guid="beea58c4-8cf5-4de3-a17c-8a9c72cc8f9b" InformativeScreenshot="2f20088cbd39811a241f24f56e8dad41.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="507, 846, 137, 37" CvType="InputBox" DesignTimeRectangle="508, 848, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='11' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_22" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Text="[in_GUID]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="656, 897, 246, 38" CvType="InputBox" DesignTimeRectangle="658, 899, 242, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='12' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' class='form-control' tag='INPUT' aaname='' /&gt;" Guid="728a9b4c-9f05-4432-a33e-c8957833ef69" InformativeScreenshot="c1f52ba84464676dbd6328631a7cf9ac.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="506, 897, 137, 37" CvType="InputBox" DesignTimeRectangle="508, 899, 134, 34" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='12' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Toggle Dropdown'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="1258, 816, 176, 37" CvType="InputBox" DesignTimeRectangle="1406, 818, 26, 34" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='                                                                *' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                                                *' tag='BUTTON' type='button' class='btn btn-success dropdown-toggle' check:innerText='Toggle Dropdown' /&gt;" Guid="d1905ab7-3d40-4965-a050-7f6d0f938422" InformativeScreenshot="ee11774de5653ebe1696af2e39870234.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="419, 770, 161, 16" CvTextArgument="Signed JSON Web Token" CvType="Text" DesignTimeRectangle="406, 757, 1108, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl class='panel-heading' idx='4' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel-heading' type='' tag='DIV' aaname='                     Signed JSON Web Token                 ' check:innerText='Signed JSON Web Token' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Generate 32-byte key'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvTextArea="1279, 866, 136, 16" CvTextArgument="Generate 32-byte key" CvType="Text" DesignTimeRectangle="1260, 860, 203, 26" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Generate 32-byte key' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Generate 32-byte key' tag='A' type='' class='' check:innerText='Generate 32-byte key' /&gt;" Guid="cdb16797-fbe8-4f04-8973-23847649c472" InformativeScreenshot="7672d2ae5a0aa8f946e7bdd11aa80889.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="1257, 816, 177, 37" CvType="InputBox" DesignTimeRectangle="1259, 818, 148, 34" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Create Signed JWT' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Create Signed JWT' tag='BUTTON' type='button' class='btn btn-success' check:innerText='Create Signed JWT' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Key'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="77809483-b736-4dd5-9e75-cae7ab6db7b6" TextString="[out_JWT]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="http://jwtbuilder.jamiekurtz.com/?v=13" CvElementArea="593, 817, 487, 36" CvType="InputBox" DesignTimeRectangle="595, 818, 485, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='key' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='key' tag='INPUT' type='text' class='form-control' aaname='Key' /&gt;" Guid="15a99a8f-8872-4aaf-bb2f-9a4159132fd3" InformativeScreenshot="c8afbe9251f4b4a0603ed8c0d6be77bb.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="539, 828, 27, 16" CvTextArgument="Key" CvType="Text" DesignTimeRectangle="391, 818, 189, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Key' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Key' tag='LABEL' type='' class='col-sm-2 control-label' check:innerText='Key' /&gt;" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1096" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACdSURBVDhPYximIHnq/v+soTP+g9jNBz/8F+189L9u33swnyCQSl4A1oxuAAjbzHmO3xCT0tVgjc71G+EK3Re9gBsAwvHrXmM3JGf2IbBmh9oNcAXIGpExVBoCkJ0Mwo0rT4MVYNOIjs1mPfuPYUDpwmOkGQADMC/Ipi4izQvIAFsgFmx/i6IZZyDCAEXRCAPoCUm29zHxCWmoAQYGAGrl2R+if6dFAAAAAElFTkSuQmCC" InformativeScreenshot="9f5a139978816c692a4895407a159ebe.jpg" Selector="&lt;html app='chrome.exe' title='Online JWT Builder - Jamie Kurtz' /&gt;" Title="Online JWT Builder - Jamie Kurtz" Url="http://jwtbuilder.jamiekurtz.com/?v=13" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
