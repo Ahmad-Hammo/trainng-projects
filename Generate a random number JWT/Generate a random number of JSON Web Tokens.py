@@ -56,7 +56,7 @@ while(rand > 0):
     # attach web page 
     driver.get('https://www.guidgenerator.com/online-guid-generator.aspx?v=12') 
 
-    # set the num of GUID to 13522
+    # set the num of GUID to 1
     inp = driver.find_element(By.NAME, 'txtCount') 
     inp.click()
     inp.clear()
