@@ -1,0 +1,977 @@
+INFO - 			Running at 2024-05-14 04:13:35.782067
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - End Setting.
+INFO - this process will retry 3 times
+INFO - Starting the main processing loop.
+INFO - 
+-------------------------------------------
+INFO - iteration number : 1
+INFO - Full Name : Shahrazad Ain Mustafa
+INFO - first Name : Shahrazad
+INFO - last Name : Mustafa
+INFO - Mother's Maiden Name : Kalb
+INFO - Phone : 75 372 748
+INFO - Country Code : 216
+INFO - Birthdate : May 23, 1975
+INFO - Company : Atlas Realty
+INFO - Favorite Color : Blue
+INFO - Email Address : ShahrazadAinMustafa@teleworm.us:
+INFO - Password : aerei0EiGh
+INFO - GUID : b0340aa28ef841d58eb56b6d51bb12cd
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTU2NDkyMjEsImV4cCI6MTc0NzE4NTIyMSwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJTaGFocmF6YWQiLCJMYXN0IE5hbWUiOiJNdXN0YWZhIiwiTW90aGVyJ3MgTWFpZGVuIE5hbWUiOiJLYWxiIiwiUEhPTkUiOiI3NSAzNzIgNzQ4IiwiQ291bnRyeSBDb2RlIjoiMjE2IiwiQmlydGhkYXRlIjoiTWF5IDIzLCAxOTc1IiwiQ29tcGFueSI6IkF0bGFzIFJlYWx0eSIsIkZhdm9yaXRlIENvbG9yIjoiQmx1ZSIsIkVtYWlsIEFkZHJlc3MiOiJTaGFocmF6YWRBaW5NdXN0YWZhQHRlbGV3b3JtLnVzIiwiUGFzc3dvcmQiOiJhZXJlaTBFaUdoIn0.v4MlMsb1Ue_BovlHQcrv69wgsKoaD0lw5RR3wCD66XA 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Shahrazad Mustafa to Excel.
+INFO - Completed iteration 1.
+INFO - 
+-------------------------------------------
+INFO - iteration number : 2
+INFO - Full Name : Lu'lu'ah Sanaa' Naifeh
+INFO - first Name : Lu'lu'ah
+INFO - last Name : Naifeh
+INFO - Mother's Maiden Name : Cham
+INFO - Phone : 76 604 293
+INFO - Country Code : 216
+INFO - Birthdate : November 27, 1948
+INFO - Company : York Steak House
+INFO - Favorite Color : Silver
+INFO - Email Address : LuluahSanaaNaifeh@jourrapide.com:
+INFO - Password : CuoYah6Cai
+INFO - GUID : a424948ae5eb4e83a24de9f269f671c1
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTU2NDkyMjEsImV4cCI6MTc0NzE4NTIyMSwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJMdSdsdSdhaCIsIkxhc3QgTmFtZSI6Ik5haWZlaCIsIk1vdGhlcidzIE1haWRlbiBOYW1lIjoiQ2hhbSIsIlBIT05FIjoiNzYgNjA0IDI5MyIsIkNvdW50cnkgQ29kZSI6IjIxNiIsIkJpcnRoZGF0ZSI6Ik5vdmVtYmVyIDI3LCAxOTQ4IiwiQ29tcGFueSI6IllvcmsgU3RlYWsgSG91c2UiLCJGYXZvcml0ZSBDb2xvciI6IlNpbHZlciIsIkVtYWlsIEFkZHJlc3MiOiJMdWx1YWhTYW5hYU5haWZlaEBqb3VycmFwaWRlLmNvbSIsIlBhc3N3b3JkIjoiQ3VvWWFoNkNhaSJ9.808Pyv5-hzmU5ytw00qKt_s-TrhNBfJtY9uLAO7j6cA 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Lu'lu'ah Naifeh to Excel.
+INFO - Completed iteration 2.
+INFO - 
+-------------------------------------------
+INFO - iteration number : 3
+INFO - Full Name : Ara Ru'yah Assaf
+INFO - first Name : Ara
+INFO - last Name : Assaf
+INFO - Mother's Maiden Name : Sarkis
+INFO - Phone : 76 650 184
+INFO - Country Code : 216
+INFO - Birthdate : February 25, 1958
+INFO - Company : Ideal Garden Management
+INFO - Favorite Color : Purple
+INFO - Email Address : AraRuyahAssaf@dayrep.com:
+INFO - Password : ziZahwu4chi
+INFO - GUID : 460190d518454036b93a9b7eae3e619d
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTU2NDkyMjEsImV4cCI6MTc0NzE4NTIyMSwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJBcmEiLCJMYXN0IE5hbWUiOiJBc3NhZiIsIk1vdGhlcidzIE1haWRlbiBOYW1lIjoiU2Fya2lzIiwiUEhPTkUiOiI3NiA2NTAgMTg0IiwiQ291bnRyeSBDb2RlIjoiMjE2IiwiQmlydGhkYXRlIjoiRmVicnVhcnkgMjUsIDE5NTgiLCJDb21wYW55IjoiSWRlYWwgR2FyZGVuIE1hbmFnZW1lbnQiLCJGYXZvcml0ZSBDb2xvciI6IlB1cnBsZSIsIkVtYWlsIEFkZHJlc3MiOiJBcmFSdXlhaEFzc2FmQGRheXJlcC5jb20iLCJQYXNzd29yZCI6InppWmFod3U0Y2hpIn0.ndT6eewHaqNmLL5x4QftSLta6rq-BquXABzFyABwOG8 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Ara Assaf to Excel.
+INFO - Completed iteration 3.
+INFO - Ending the main processing loop.
+INFO - Run completed. Total time taken: 36.66 seconds.
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-14 04:14:36.418682
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - End Setting.
+INFO - this process will retry 2 times
+INFO - Starting the main processing loop.
+INFO - 
+-------------------------------------------
+INFO - iteration number : 1
+INFO - Full Name : Sakinah Lana Asker
+INFO - first Name : Sakinah
+INFO - last Name : Asker
+INFO - Mother's Maiden Name : Antar
+INFO - Phone : 76 455 532
+INFO - Country Code : 216
+INFO - Birthdate : March 21, 1977
+INFO - Company : Weingarten's
+INFO - Favorite Color : Blue
+INFO - Email Address : SakinahLanaAsker@jourrapide.com:
+INFO - Password : aiK1ooxeQuei
+INFO - GUID : 6309d8d10dac45669f4dd2a2a4170db6
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTU2NDkyODIsImV4cCI6MTc0NzE4NTI4MiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJTYWtpbmFoIiwiTGFzdCBOYW1lIjoiQXNrZXIiLCJNb3RoZXIncyBNYWlkZW4gTmFtZSI6IkFudGFyIiwiUEhPTkUiOiI3NiA0NTUgNTMyIiwiQ291bnRyeSBDb2RlIjoiMjE2IiwiQmlydGhkYXRlIjoiTWFyY2ggMjEsIDE5NzciLCJDb21wYW55IjoiV2VpbmdhcnRlbidzIiwiRmF2b3JpdGUgQ29sb3IiOiJCbHVlIiwiRW1haWwgQWRkcmVzcyI6IlNha2luYWhMYW5hQXNrZXJAam91cnJhcGlkZS5jb20iLCJQYXNzd29yZCI6ImFpSzFvb3hlUXVlaSJ9.wTNRk5knlAgcGyi2rZ_nDWwgu_6rsJZYWWzbTfw-Usc 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Sakinah Asker to Excel.
+INFO - Completed iteration 1.
+INFO - 
+-------------------------------------------
+INFO - iteration number : 2
+INFO - Full Name : Sibaal Nashwa Daher
+INFO - first Name : Sibaal
+INFO - last Name : Daher
+INFO - Mother's Maiden Name : Haddad
+INFO - Phone : 78 831 242
+INFO - Country Code : 216
+INFO - Birthdate : October 30, 1941
+INFO - Company : Mr. Steak
+INFO - Favorite Color : Blue
+INFO - Email Address : SibaalNashwaDaher@armyspy.com:
+INFO - Password : Einie0peepo
+INFO - GUID : 11aa264d97264d78a703d3638b06cf75
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTU2NDkyODIsImV4cCI6MTc0NzE4NTI4MiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJTaWJhYWwiLCJMYXN0IE5hbWUiOiJEYWhlciIsIk1vdGhlcidzIE1haWRlbiBOYW1lIjoiSGFkZGFkIiwiUEhPTkUiOiI3OCA4MzEgMjQyIiwiQ291bnRyeSBDb2RlIjoiMjE2IiwiQmlydGhkYXRlIjoiT2N0b2JlciAzMCwgMTk0MSIsIkNvbXBhbnkiOiJNci4gU3RlYWsiLCJGYXZvcml0ZSBDb2xvciI6IkJsdWUiLCJFbWFpbCBBZGRyZXNzIjoiU2liYWFsTmFzaHdhRGFoZXJAYXJteXNweS5jb20iLCJQYXNzd29yZCI6IkVpbmllMHBlZXBvIn0.ymI1dgzqNmFh-VeZSvy6IAj1kzPFWtAoqcqE8-QZivw 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Sibaal Daher to Excel.
+INFO - Completed iteration 2.
+INFO - Ending the main processing loop.
+INFO - Run completed. Total time taken: 31.04 seconds.
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 12:56:50.207594
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+ERROR - Unexpected error occurred: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="chkHypens"]"}
+  (Session info: chrome=125.0.6422.78); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F5D41F22+60322]
+	(No symbol) [0x00007FF6F5CBCE99]
+	(No symbol) [0x00007FF6F5B77EBA]
+	(No symbol) [0x00007FF6F5BC7676]
+	(No symbol) [0x00007FF6F5BC773C]
+	(No symbol) [0x00007FF6F5C0E967]
+	(No symbol) [0x00007FF6F5BEC25F]
+	(No symbol) [0x00007FF6F5C0BC80]
+	(No symbol) [0x00007FF6F5BEBFC3]
+	(No symbol) [0x00007FF6F5BB9617]
+	(No symbol) [0x00007FF6F5BBA211]
+	GetHandleVerifier [0x00007FF6F605946D+3301613]
+	GetHandleVerifier [0x00007FF6F60A3693+3605267]
+	GetHandleVerifier [0x00007FF6F6099410+3563664]
+	GetHandleVerifier [0x00007FF6F5DF42F6+790390]
+	(No symbol) [0x00007FF6F5CC74DF]
+	(No symbol) [0x00007FF6F5CC33D4]
+	(No symbol) [0x00007FF6F5CC3562]
+	(No symbol) [0x00007FF6F5CB2F6F]
+	BaseThreadInitThunk [0x00007FFA2E31257D+29]
+	RtlUserThreadStart [0x00007FFA2FB0AA48+40]
+
+INFO - 			Running at 2024-05-28 13:04:12.854306
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID 3e83a6a801294bd78531524932df6c05 to queue.
+INFO - Successfully added GUID 2ec169355146459a803a644c0031db0f to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 2 and 4: is 2
+INFO - this process will retry 2 times
+INFO - Starting the main processing loop.
+ERROR - Unexpected error occurred: Failed to fetch transaction from queue: {"message":"Invalid OData query options.","errorCode":999,"traceId":"00-8102ba5796a7ef08022c9da6cf19e906-38dc59485939e487-00"}
+INFO - 			Running at 2024-05-28 13:08:56.207555
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+ERROR - Unexpected error occurred: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="chkHypens"]"}
+  (Session info: chrome=125.0.6422.78); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F5D41F22+60322]
+	(No symbol) [0x00007FF6F5CBCE99]
+	(No symbol) [0x00007FF6F5B77EBA]
+	(No symbol) [0x00007FF6F5BC7676]
+	(No symbol) [0x00007FF6F5BC773C]
+	(No symbol) [0x00007FF6F5C0E967]
+	(No symbol) [0x00007FF6F5BEC25F]
+	(No symbol) [0x00007FF6F5C0BC80]
+	(No symbol) [0x00007FF6F5BEBFC3]
+	(No symbol) [0x00007FF6F5BB9617]
+	(No symbol) [0x00007FF6F5BBA211]
+	GetHandleVerifier [0x00007FF6F605946D+3301613]
+	GetHandleVerifier [0x00007FF6F60A3693+3605267]
+	GetHandleVerifier [0x00007FF6F6099410+3563664]
+	GetHandleVerifier [0x00007FF6F5DF42F6+790390]
+	(No symbol) [0x00007FF6F5CC74DF]
+	(No symbol) [0x00007FF6F5CC33D4]
+	(No symbol) [0x00007FF6F5CC3562]
+	(No symbol) [0x00007FF6F5CB2F6F]
+	BaseThreadInitThunk [0x00007FFA2E31257D+29]
+	RtlUserThreadStart [0x00007FFA2FB0AA48+40]
+
+INFO - 			Running at 2024-05-28 13:11:28.587778
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID 3953a82ba86e4239b485eba3c828e92b to queue.
+INFO - Successfully added GUID f6c9f8fe90114d29b94fb51fb3b16645 to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 2 and 4: is 2
+INFO - this process will retry 2 times
+INFO - Starting the main processing loop.
+ERROR - Unexpected error occurred: Failed to fetch transaction from queue: {"message":"Invalid OData query options.","errorCode":999,"traceId":"00-743488a3b2b611f22f396998d20adf19-76e17dc777e9f6f0-00"}
+INFO - 			Running at 2024-05-28 13:19:06.113231
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID b93f354a9e7c4ff882388916c47c1c41 to queue.
+INFO - Successfully added GUID a7693761c3434601890d95e9d86ec312 to queue.
+INFO - Successfully added GUID 77f3577fa34d4e3d9deb2872a46acf1d to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 2 and 4: is 3
+INFO - this process will retry 3 times
+INFO - Starting the main processing loop.
+ERROR - Unexpected error occurred: 'QueueItemId'
+INFO - 			Running at 2024-05-28 14:15:31.363278
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+ERROR - Unexpected error occurred: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="txtCount"]"}
+  (Session info: chrome=125.0.6422.78); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F5D41F22+60322]
+	(No symbol) [0x00007FF6F5CBCE99]
+	(No symbol) [0x00007FF6F5B77EBA]
+	(No symbol) [0x00007FF6F5BC7676]
+	(No symbol) [0x00007FF6F5BC773C]
+	(No symbol) [0x00007FF6F5C0E967]
+	(No symbol) [0x00007FF6F5BEC25F]
+	(No symbol) [0x00007FF6F5C0BC80]
+	(No symbol) [0x00007FF6F5BEBFC3]
+	(No symbol) [0x00007FF6F5BB9617]
+	(No symbol) [0x00007FF6F5BBA211]
+	GetHandleVerifier [0x00007FF6F605946D+3301613]
+	GetHandleVerifier [0x00007FF6F60A3693+3605267]
+	GetHandleVerifier [0x00007FF6F6099410+3563664]
+	GetHandleVerifier [0x00007FF6F5DF42F6+790390]
+	(No symbol) [0x00007FF6F5CC74DF]
+	(No symbol) [0x00007FF6F5CC33D4]
+	(No symbol) [0x00007FF6F5CC3562]
+	(No symbol) [0x00007FF6F5CB2F6F]
+	BaseThreadInitThunk [0x00007FFA2E31257D+29]
+	RtlUserThreadStart [0x00007FFA2FB0AA48+40]
+
+INFO - Run faild. Total time taken: 53.80 seconds.
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 14:18:27.239610
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID 8cb6e9655d484d78b00872a6a6ff13de to queue.
+INFO - Successfully added GUID ab7242e5234f4f5f9eae12ca5bd2dad1 to queue.
+INFO - Successfully added GUID 1f6a322abdb84708bed2ad414853a4c8 to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 2 and 4: is 3
+INFO - this process will retry 3 times
+INFO - Starting the main processing loop.
+ERROR - Unexpected error occurred: 'QueueItemId'
+INFO - Run faild. Total time taken: 61.62 seconds.
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 14:25:30.675415
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID 9e9d3dec9e134809b87387c5cf641acb to queue.
+INFO - Successfully added GUID 3ec632205e374642b2d52954165254cd to queue.
+INFO - Successfully added GUID c2531a90a2604711b4f0eee03955d106 to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 2 and 4: is 3
+INFO - this process will retry 3 times
+INFO - Starting the main processing loop.
+INFO - Fetched transaction: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': 'c84b6d70-b57b-466f-8565-2d4dcb555d51', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': 'c84b6d70-b57b-466f-8565-2d4dcb555d51', 'SpecificData': '{"DynamicProperties":{"GUID":"c2531a90a2604711b4f0eee03955d106"}}', 'CreationTime': '2024-05-28T11:25:44.267Z', 'Progress': None, 'RowVersion': 'AAAAAEGaHls=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 944956, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441980881, 'ProcessingException': None, 'SpecificContent': {'GUID': 'c2531a90a2604711b4f0eee03955d106'}, 'Output': None, 'Analytics': None}
+INFO - 
+-------------------------------------------
+INFO - iteration number : 1
+INFO - Full Name : Ghazalah Lu'lu' Hadad
+INFO - first Name : Ghazalah
+INFO - last Name : Hadad
+INFO - Mother's Maiden Name : Ghanem
+INFO - Phone : 71 949 970
+INFO - Country Code : 216
+INFO - Birthdate : February 14, 1962
+INFO - Company : Avant Garde Interior Designs
+INFO - Favorite Color : Blue
+INFO - Email Address : GhazalahLuluHadad@teleworm.us:
+INFO - Password : Uigee1fi4j
+INFO - GUID : c2531a90a2604711b4f0eee03955d106
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY4OTU1NDAsImV4cCI6MTc0ODQzMTU0MCwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJHaGF6YWxhaCIsIkxhc3QgTmFtZSI6IkhhZGFkIiwiTW90aGVyJ3MgTWFpZGVuIE5hbWUiOiJHaGFuZW0iLCJQSE9ORSI6IjcxIDk0OSA5NzAiLCJDb3VudHJ5IENvZGUiOiIyMTYiLCJCaXJ0aGRhdGUiOiJGZWJydWFyeSAxNCwgMTk2MiIsIkNvbXBhbnkiOiJBdmFudCBHYXJkZSBJbnRlcmlvciBEZXNpZ25zIiwiRmF2b3JpdGUgQ29sb3IiOiJCbHVlIiwiRW1haWwgQWRkcmVzcyI6IkdoYXphbGFoTHVsdUhhZGFkQHRlbGV3b3JtLnVzIiwiUGFzc3dvcmQiOiJVaWdlZTFmaTRqIn0.mmItmhQx8WIoflTitHJkSbtIF3LgVKrlSwnsBct19x4 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Ghazalah Hadad to Excel.
+ERROR - Failed to update transaction status: {"message":"Invalid OData query options.","errorCode":999,"traceId":"00-6a7581194bc8af020df6287b16092715-37214732f4671616-00"}
+INFO - Completed iteration 1.
+INFO - Fetched transaction: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': 'c84b6d70-b57b-466f-8565-2d4dcb555d51', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': 'c84b6d70-b57b-466f-8565-2d4dcb555d51', 'SpecificData': '{"DynamicProperties":{"GUID":"c2531a90a2604711b4f0eee03955d106"}}', 'CreationTime': '2024-05-28T11:25:44.267Z', 'Progress': None, 'RowVersion': 'AAAAAEGaHls=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 944956, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441980881, 'ProcessingException': None, 'SpecificContent': {'GUID': 'c2531a90a2604711b4f0eee03955d106'}, 'Output': None, 'Analytics': None}
+INFO - 
+-------------------------------------------
+INFO - iteration number : 2
+INFO - Full Name : Alhena Amtullah Aswad
+INFO - first Name : Alhena
+INFO - last Name : Aswad
+INFO - Mother's Maiden Name : Ganem
+INFO - Phone : 76 847 301
+INFO - Country Code : 216
+INFO - Birthdate : June 20, 1955
+INFO - Company : Circus World
+INFO - Favorite Color : Black
+INFO - Email Address : AlhenaAmtullahAswad@armyspy.com:
+INFO - Password : apae6hiV
+INFO - GUID : c2531a90a2604711b4f0eee03955d106
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY4OTU1NDAsImV4cCI6MTc0ODQzMTU0MCwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJBbGhlbmEiLCJMYXN0IE5hbWUiOiJBc3dhZCIsIk1vdGhlcidzIE1haWRlbiBOYW1lIjoiR2FuZW0iLCJQSE9ORSI6Ijc2IDg0NyAzMDEiLCJDb3VudHJ5IENvZGUiOiIyMTYiLCJCaXJ0aGRhdGUiOiJKdW5lIDIwLCAxOTU1IiwiQ29tcGFueSI6IkNpcmN1cyBXb3JsZCIsIkZhdm9yaXRlIENvbG9yIjoiQmxhY2siLCJFbWFpbCBBZGRyZXNzIjoiQWxoZW5hQW10dWxsYWhBc3dhZEBhcm15c3B5LmNvbSIsIlBhc3N3b3JkIjoiYXBhZTZoaVYifQ.0XVssZTxJHoXV3iAZmSFb33Bu2NWYORO9zxU9Hl0nwQ 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Alhena Aswad to Excel.
+ERROR - Failed to update transaction status: {"message":"Invalid OData query options.","errorCode":999,"traceId":"00-1001a47d496a21ba93777981b2636add-0c1202a2a93415cf-00"}
+INFO - Completed iteration 2.
+INFO - Fetched transaction: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': 'c84b6d70-b57b-466f-8565-2d4dcb555d51', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': 'c84b6d70-b57b-466f-8565-2d4dcb555d51', 'SpecificData': '{"DynamicProperties":{"GUID":"c2531a90a2604711b4f0eee03955d106"}}', 'CreationTime': '2024-05-28T11:25:44.267Z', 'Progress': None, 'RowVersion': 'AAAAAEGaHls=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 944956, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441980881, 'ProcessingException': None, 'SpecificContent': {'GUID': 'c2531a90a2604711b4f0eee03955d106'}, 'Output': None, 'Analytics': None}
+INFO - 
+-------------------------------------------
+INFO - iteration number : 3
+INFO - Full Name : Raja' Sadad Awad
+INFO - first Name : Raja'
+INFO - last Name : Awad
+INFO - Mother's Maiden Name : Guirguis
+INFO - Phone : 78 787 554
+INFO - Country Code : 216
+INFO - Birthdate : September 10, 1956
+INFO - Company : Muscle Factory
+INFO - Favorite Color : Red
+INFO - Email Address : RajaSadadAwad@jourrapide.com:
+INFO - Password : Eu6aeroh
+INFO - GUID : c2531a90a2604711b4f0eee03955d106
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY4OTU1NDAsImV4cCI6MTc0ODQzMTU0MCwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJSYWphJyIsIkxhc3QgTmFtZSI6IkF3YWQiLCJNb3RoZXIncyBNYWlkZW4gTmFtZSI6Ikd1aXJndWlzIiwiUEhPTkUiOiI3OCA3ODcgNTU0IiwiQ291bnRyeSBDb2RlIjoiMjE2IiwiQmlydGhkYXRlIjoiU2VwdGVtYmVyIDEwLCAxOTU2IiwiQ29tcGFueSI6Ik11c2NsZSBGYWN0b3J5IiwiRmF2b3JpdGUgQ29sb3IiOiJSZWQiLCJFbWFpbCBBZGRyZXNzIjoiUmFqYVNhZGFkQXdhZEBqb3VycmFwaWRlLmNvbSIsIlBhc3N3b3JkIjoiRXU2YWVyb2gifQ.0oRjTdaYcW41tlu59bpLht9AWiq4RZ9naI_OxzdieuQ 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Raja' Awad to Excel.
+ERROR - Failed to update transaction status: {"message":"Invalid OData query options.","errorCode":999,"traceId":"00-842ce81ae8b0e4055974245181bb7833-8c7d0c4454b2890f-00"}
+INFO - Completed iteration 3.
+INFO - Ending the main processing loop.
+INFO - Run completed. Total time taken: 46.41 seconds.
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 14:31:38.753410
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID 25296e44092945b7a5468f711b0b5818 to queue.
+INFO - Successfully added GUID 728280e2f4d845c3bd75fdf62083b617 to queue.
+INFO - Successfully added GUID eaaf8d8f8c104fd68167feaa811f3280 to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 2 and 4: is 3
+INFO - this process will retry 3 times
+INFO - Starting the main processing loop.
+INFO - Fetched transaction: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': '3a6f43d1-8bf0-4da1-917b-b238f591c969', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': '3a6f43d1-8bf0-4da1-917b-b238f591c969', 'SpecificData': '{"DynamicProperties":{"GUID":"eaaf8d8f8c104fd68167feaa811f3280"}}', 'CreationTime': '2024-05-28T11:33:37.833Z', 'Progress': None, 'RowVersion': 'AAAAAEGaMOg=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 944956, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441982635, 'ProcessingException': None, 'SpecificContent': {'GUID': 'eaaf8d8f8c104fd68167feaa811f3280'}, 'Output': None, 'Analytics': None}
+ERROR - Unexpected error occurred: 'QueueItemId'
+INFO - 			Running at 2024-05-28 14:46:44.407939
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID 44a62e3e2c72474db6504b36df6a6b33 to queue.
+INFO - Successfully added GUID 05c579a6a1bf4fa0a09849966ee6094a to queue.
+INFO - Successfully added GUID bc263b03e2224a2d95ce11efcf6f55bf to queue.
+INFO - Successfully added GUID c98dc545d5d04dd99fcab2e16e698cdb to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 2 and 4: is 4
+INFO - this process will retry 4 times
+INFO - Starting the main processing loop.
+INFO - Fetched transaction: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': '55538cc6-12b5-40ba-8637-a1ba27169e71', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': '55538cc6-12b5-40ba-8637-a1ba27169e71', 'SpecificData': '{"DynamicProperties":{"GUID":"c98dc545d5d04dd99fcab2e16e698cdb"}}', 'CreationTime': '2024-05-28T11:47:01.143Z', 'Progress': None, 'RowVersion': 'AAAAAEGaStU=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 944956, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441984015, 'ProcessingException': None, 'SpecificContent': {'GUID': 'c98dc545d5d04dd99fcab2e16e698cdb'}, 'Output': None, 'Analytics': None}
+INFO - Fetched transaction details: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': '55538cc6-12b5-40ba-8637-a1ba27169e71', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': '55538cc6-12b5-40ba-8637-a1ba27169e71', 'SpecificData': '{"DynamicProperties":{"GUID":"c98dc545d5d04dd99fcab2e16e698cdb"}}', 'CreationTime': '2024-05-28T11:47:01.143Z', 'Progress': None, 'RowVersion': 'AAAAAEGaStU=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 944956, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441984015, 'ProcessingException': None, 'SpecificContent': {'GUID': 'c98dc545d5d04dd99fcab2e16e698cdb'}, 'Output': None, 'Analytics': None}
+ERROR - Unexpected error occurred: 'QueueItemId'
+INFO - 			Running at 2024-05-28 14:48:14.362547
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID 11466828f6b145318e0b55737ae01974 to queue.
+INFO - Successfully added GUID dad87141b9604049b2da9baaf7828403 to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 2 and 4: is 2
+INFO - this process will retry 2 times
+INFO - Starting the main processing loop.
+INFO - Fetched transaction: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': 'db21a929-96da-47b6-bbaf-e400544917b6', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': 'db21a929-96da-47b6-bbaf-e400544917b6', 'SpecificData': '{"DynamicProperties":{"GUID":"dad87141b9604049b2da9baaf7828403"}}', 'CreationTime': '2024-05-28T11:48:25.85Z', 'Progress': None, 'RowVersion': 'AAAAAEGaTQU=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 944956, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441984092, 'ProcessingException': None, 'SpecificContent': {'GUID': 'dad87141b9604049b2da9baaf7828403'}, 'Output': None, 'Analytics': None}
+INFO - Fetched transaction details: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': 'db21a929-96da-47b6-bbaf-e400544917b6', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': 'db21a929-96da-47b6-bbaf-e400544917b6', 'SpecificData': '{"DynamicProperties":{"GUID":"dad87141b9604049b2da9baaf7828403"}}', 'CreationTime': '2024-05-28T11:48:25.85Z', 'Progress': None, 'RowVersion': 'AAAAAEGaTQU=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 944956, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441984092, 'ProcessingException': None, 'SpecificContent': {'GUID': 'dad87141b9604049b2da9baaf7828403'}, 'Output': None, 'Analytics': None}
+ERROR - Unexpected error occurred: 'QueueItemId'
+INFO - 			Running at 2024-05-28 14:50:55.397340
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID 36f61e8a989545b5996c9d774914e3e3 to queue.
+INFO - Successfully added GUID 51494e3085d842388aaaacc695bd1a3d to queue.
+INFO - Successfully added GUID 9348498fc0df40f4bf0cd648b5d5ae0d to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 2 and 4: is 3
+INFO - this process will retry 3 times
+INFO - Starting the main processing loop.
+INFO - Fetched transaction: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': '4d50f904-7df0-4918-8a8a-d23b1ae8b0f9', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': '4d50f904-7df0-4918-8a8a-d23b1ae8b0f9', 'SpecificData': '{"DynamicProperties":{"GUID":"9348498fc0df40f4bf0cd648b5d5ae0d"}}', 'CreationTime': '2024-05-28T11:51:08.753Z', 'Progress': None, 'RowVersion': 'AAAAAEGaUVk=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945052, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441984247, 'ProcessingException': None, 'SpecificContent': {'GUID': '9348498fc0df40f4bf0cd648b5d5ae0d'}, 'Output': None, 'Analytics': None}
+INFO - Fetched transaction details: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': '4d50f904-7df0-4918-8a8a-d23b1ae8b0f9', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': '4d50f904-7df0-4918-8a8a-d23b1ae8b0f9', 'SpecificData': '{"DynamicProperties":{"GUID":"9348498fc0df40f4bf0cd648b5d5ae0d"}}', 'CreationTime': '2024-05-28T11:51:08.753Z', 'Progress': None, 'RowVersion': 'AAAAAEGaUVk=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945052, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441984247, 'ProcessingException': None, 'SpecificContent': {'GUID': '9348498fc0df40f4bf0cd648b5d5ae0d'}, 'Output': None, 'Analytics': None}
+ERROR - Unexpected error occurred: '1639030'
+INFO - 			Running at 2024-05-28 14:53:40.095130
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID 9762b7c5671f418ab785762538115ef4 to queue.
+INFO - Successfully added GUID f456983200354812a160c61b07e98b74 to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 2 and 4: is 2
+INFO - this process will retry 2 times
+INFO - Starting the main processing loop.
+INFO - Fetched transaction: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': 'd7c1b495-b925-4626-875b-ff98b8203b4b', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': 'd7c1b495-b925-4626-875b-ff98b8203b4b', 'SpecificData': '{"DynamicProperties":{"GUID":"f456983200354812a160c61b07e98b74"}}', 'CreationTime': '2024-05-28T11:53:53.223Z', 'Progress': None, 'RowVersion': 'AAAAAEGaVg4=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945052, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441984394, 'ProcessingException': None, 'SpecificContent': {'GUID': 'f456983200354812a160c61b07e98b74'}, 'Output': None, 'Analytics': None}
+INFO - Fetched transaction details: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': 'd7c1b495-b925-4626-875b-ff98b8203b4b', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': 'd7c1b495-b925-4626-875b-ff98b8203b4b', 'SpecificData': '{"DynamicProperties":{"GUID":"f456983200354812a160c61b07e98b74"}}', 'CreationTime': '2024-05-28T11:53:53.223Z', 'Progress': None, 'RowVersion': 'AAAAAEGaVg4=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945052, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441984394, 'ProcessingException': None, 'SpecificContent': {'GUID': 'f456983200354812a160c61b07e98b74'}, 'Output': None, 'Analytics': None}
+ERROR - Unexpected error occurred: '945052'
+INFO - 			Running at 2024-05-28 14:56:51.662002
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID 9217830b369d4565a2773cc916b6179c to queue.
+INFO - Successfully added GUID 98dabe09a0b04879bd9d7ba5d6c6af78 to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 2 and 4: is 2
+INFO - this process will retry 2 times
+INFO - Starting the main processing loop.
+INFO - Fetched transaction: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': '0e478518-85ab-422a-aeee-98836cbca133', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': '0e478518-85ab-422a-aeee-98836cbca133', 'SpecificData': '{"DynamicProperties":{"GUID":"98dabe09a0b04879bd9d7ba5d6c6af78"}}', 'CreationTime': '2024-05-28T11:57:05.323Z', 'Progress': None, 'RowVersion': 'AAAAAEGaXNQ=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945052, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441984793, 'ProcessingException': None, 'SpecificContent': {'GUID': '98dabe09a0b04879bd9d7ba5d6c6af78'}, 'Output': None, 'Analytics': None}
+INFO - Fetched transaction details: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': '0e478518-85ab-422a-aeee-98836cbca133', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': '0e478518-85ab-422a-aeee-98836cbca133', 'SpecificData': '{"DynamicProperties":{"GUID":"98dabe09a0b04879bd9d7ba5d6c6af78"}}', 'CreationTime': '2024-05-28T11:57:05.323Z', 'Progress': None, 'RowVersion': 'AAAAAEGaXNQ=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945052, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441984793, 'ProcessingException': None, 'SpecificContent': {'GUID': '98dabe09a0b04879bd9d7ba5d6c6af78'}, 'Output': None, 'Analytics': None}
+ERROR - Unexpected error occurred: 'QueueItemId'
+INFO - 			Running at 2024-05-28 14:59:48.253263
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID bde4febca5c0458c973392410f256ddf to queue.
+INFO - Successfully added GUID 9fb78f0bc51c426f9d51740b87cb2529 to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 2 and 4: is 2
+INFO - this process will retry 2 times
+INFO - Starting the main processing loop.
+INFO - Fetched transaction: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': '0de9cb05-d4d1-48dd-bdb5-c11d4bc0ee42', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': '0de9cb05-d4d1-48dd-bdb5-c11d4bc0ee42', 'SpecificData': '{"DynamicProperties":{"GUID":"9fb78f0bc51c426f9d51740b87cb2529"}}', 'CreationTime': '2024-05-28T12:00:00.647Z', 'Progress': None, 'RowVersion': 'AAAAAEGaYpM=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945052, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441984967, 'ProcessingException': None, 'SpecificContent': {'GUID': '9fb78f0bc51c426f9d51740b87cb2529'}, 'Output': None, 'Analytics': None}
+INFO - Fetched transaction details: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': '0de9cb05-d4d1-48dd-bdb5-c11d4bc0ee42', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': '0de9cb05-d4d1-48dd-bdb5-c11d4bc0ee42', 'SpecificData': '{"DynamicProperties":{"GUID":"9fb78f0bc51c426f9d51740b87cb2529"}}', 'CreationTime': '2024-05-28T12:00:00.647Z', 'Progress': None, 'RowVersion': 'AAAAAEGaYpM=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945052, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441984967, 'ProcessingException': None, 'SpecificContent': {'GUID': '9fb78f0bc51c426f9d51740b87cb2529'}, 'Output': None, 'Analytics': None}
+ERROR - Unexpected error occurred: 'QueueItemId'
+INFO - 			Running at 2024-05-28 15:05:41.627074
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID b182c3a759004dab876881d28fe5fee8 to queue.
+INFO - Successfully added GUID 916ff947ff64433298b217a478615d55 to queue.
+INFO - Successfully added GUID 4d4a592615b847a7abffbf7593efe226 to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 2 and 4: is 3
+INFO - this process will retry 3 times
+INFO - Starting the main processing loop.
+INFO - Fetched transaction: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': 'b6c4e7a3-8b70-4274-bc84-350f6158b36d', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': 'b6c4e7a3-8b70-4274-bc84-350f6158b36d', 'SpecificData': '{"DynamicProperties":{"GUID":"4d4a592615b847a7abffbf7593efe226"}}', 'CreationTime': '2024-05-28T12:05:54.527Z', 'Progress': None, 'RowVersion': 'AAAAAEGahQM=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945052, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441987898, 'ProcessingException': None, 'SpecificContent': {'GUID': '4d4a592615b847a7abffbf7593efe226'}, 'Output': None, 'Analytics': None}
+INFO - Fetched transaction details: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': 'b6c4e7a3-8b70-4274-bc84-350f6158b36d', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': 'b6c4e7a3-8b70-4274-bc84-350f6158b36d', 'SpecificData': '{"DynamicProperties":{"GUID":"4d4a592615b847a7abffbf7593efe226"}}', 'CreationTime': '2024-05-28T12:05:54.527Z', 'Progress': None, 'RowVersion': 'AAAAAEGahQM=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945052, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441987898, 'ProcessingException': None, 'SpecificContent': {'GUID': '4d4a592615b847a7abffbf7593efe226'}, 'Output': None, 'Analytics': None}
+INFO - 
+-------------------------------------------
+INFO - iteration number : 1
+INFO - Full Name : Nabihah Judi Sarraf
+INFO - first Name : Nabihah
+INFO - last Name : Sarraf
+INFO - Mother's Maiden Name : Sabbagh
+INFO - Phone : 77 615 185
+INFO - Country Code : 216
+INFO - Birthdate : November 15, 1949
+INFO - Company : Terra
+INFO - Favorite Color : Black
+INFO - Email Address : NabihahJudiSarraf@armyspy.com:
+INFO - Password : Aiw8aiyah
+INFO - GUID : 4d4a592615b847a7abffbf7593efe226
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY4OTc5NDksImV4cCI6MTc0ODQzMzk0OSwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJOYWJpaGFoIiwiTGFzdCBOYW1lIjoiU2FycmFmIiwiTW90aGVyJ3MgTWFpZGVuIE5hbWUiOiJTYWJiYWdoIiwiUEhPTkUiOiI3NyA2MTUgMTg1IiwiQ291bnRyeSBDb2RlIjoiMjE2IiwiQmlydGhkYXRlIjoiTm92ZW1iZXIgMTUsIDE5NDkiLCJDb21wYW55IjoiVGVycmEiLCJGYXZvcml0ZSBDb2xvciI6IkJsYWNrIiwiRW1haWwgQWRkcmVzcyI6Ik5hYmloYWhKdWRpU2FycmFmQGFybXlzcHkuY29tIiwiUGFzc3dvcmQiOiJBaXc4YWl5YWgifQ.YoOTOJ1sv-Xn8h6lYZboFQQhyiOxjxYYDWU9O2P5k5U 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Nabihah Sarraf to Excel.
+ERROR - Failed to update transaction status: 
+INFO - Completed iteration 1.
+INFO - Fetched transaction: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': 'b6c4e7a3-8b70-4274-bc84-350f6158b36d', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': 'b6c4e7a3-8b70-4274-bc84-350f6158b36d', 'SpecificData': '{"DynamicProperties":{"GUID":"4d4a592615b847a7abffbf7593efe226"}}', 'CreationTime': '2024-05-28T12:05:54.527Z', 'Progress': None, 'RowVersion': 'AAAAAEGahQM=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945052, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441987898, 'ProcessingException': None, 'SpecificContent': {'GUID': '4d4a592615b847a7abffbf7593efe226'}, 'Output': None, 'Analytics': None}
+INFO - Fetched transaction details: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': 'b6c4e7a3-8b70-4274-bc84-350f6158b36d', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': 'b6c4e7a3-8b70-4274-bc84-350f6158b36d', 'SpecificData': '{"DynamicProperties":{"GUID":"4d4a592615b847a7abffbf7593efe226"}}', 'CreationTime': '2024-05-28T12:05:54.527Z', 'Progress': None, 'RowVersion': 'AAAAAEGahQM=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945052, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441987898, 'ProcessingException': None, 'SpecificContent': {'GUID': '4d4a592615b847a7abffbf7593efe226'}, 'Output': None, 'Analytics': None}
+INFO - 
+-------------------------------------------
+INFO - iteration number : 2
+INFO - Full Name : Shamil Ferran Hadad
+INFO - first Name : Shamil
+INFO - last Name : Hadad
+INFO - Mother's Maiden Name : Haik
+INFO - Phone : 77 948 067
+INFO - Country Code : 216
+INFO - Birthdate : November 18, 1986
+INFO - Company : Official All Star Café
+INFO - Favorite Color : Green
+INFO - Email Address : ShamilFerranHadad@dayrep.com:
+INFO - Password : Ahv3Eitoh
+INFO - GUID : 4d4a592615b847a7abffbf7593efe226
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY4OTc5NDksImV4cCI6MTc0ODQzMzk0OSwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJTaGFtaWwiLCJMYXN0IE5hbWUiOiJIYWRhZCIsIk1vdGhlcidzIE1haWRlbiBOYW1lIjoiSGFpayIsIlBIT05FIjoiNzcgOTQ4IDA2NyIsIkNvdW50cnkgQ29kZSI6IjIxNiIsIkJpcnRoZGF0ZSI6Ik5vdmVtYmVyIDE4LCAxOTg2IiwiQ29tcGFueSI6Ik9mZmljaWFsIEFsbCBTdGFyIENhZsOpIiwiRmF2b3JpdGUgQ29sb3IiOiJHcmVlbiIsIkVtYWlsIEFkZHJlc3MiOiJTaGFtaWxGZXJyYW5IYWRhZEBkYXlyZXAuY29tIiwiUGFzc3dvcmQiOiJBaHYzRWl0b2gifQ.QFDRrjzzQuJgNlnDpJtk3YcvljxYTX5-kGB0CuGmlec 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Shamil Hadad to Excel.
+ERROR - Failed to update transaction status: 
+INFO - Completed iteration 2.
+INFO - Fetched transaction: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': 'b6c4e7a3-8b70-4274-bc84-350f6158b36d', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': 'b6c4e7a3-8b70-4274-bc84-350f6158b36d', 'SpecificData': '{"DynamicProperties":{"GUID":"4d4a592615b847a7abffbf7593efe226"}}', 'CreationTime': '2024-05-28T12:05:54.527Z', 'Progress': None, 'RowVersion': 'AAAAAEGahQM=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945052, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441987898, 'ProcessingException': None, 'SpecificContent': {'GUID': '4d4a592615b847a7abffbf7593efe226'}, 'Output': None, 'Analytics': None}
+INFO - Fetched transaction details: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': 'b6c4e7a3-8b70-4274-bc84-350f6158b36d', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': 'b6c4e7a3-8b70-4274-bc84-350f6158b36d', 'SpecificData': '{"DynamicProperties":{"GUID":"4d4a592615b847a7abffbf7593efe226"}}', 'CreationTime': '2024-05-28T12:05:54.527Z', 'Progress': None, 'RowVersion': 'AAAAAEGahQM=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945052, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441987898, 'ProcessingException': None, 'SpecificContent': {'GUID': '4d4a592615b847a7abffbf7593efe226'}, 'Output': None, 'Analytics': None}
+INFO - 
+-------------------------------------------
+INFO - iteration number : 3
+INFO - Full Name : Muhanna Adel Maloof
+INFO - first Name : Muhanna
+INFO - last Name : Maloof
+INFO - Mother's Maiden Name : Samaha
+INFO - Phone : 78 254 222
+INFO - Country Code : 216
+INFO - Birthdate : March 9, 1952
+INFO - Company : 
+INFO - Favorite Color : Blue
+INFO - Email Address : MuhannaAdelMaloof@dayrep.com:
+INFO - Password : Iephuce9jie
+INFO - GUID : 4d4a592615b847a7abffbf7593efe226
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY4OTc5NDksImV4cCI6MTc0ODQzMzk0OSwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJNdWhhbm5hIiwiTGFzdCBOYW1lIjoiTWFsb29mIiwiTW90aGVyJ3MgTWFpZGVuIE5hbWUiOiJTYW1haGEiLCJQSE9ORSI6Ijc4IDI1NCAyMjIiLCJDb3VudHJ5IENvZGUiOiIyMTYiLCJCaXJ0aGRhdGUiOiJNYXJjaCA5LCAxOTUyIiwiRmF2b3JpdGUgQ29sb3IiOiJCbHVlIiwiRW1haWwgQWRkcmVzcyI6Ik11aGFubmFBZGVsTWFsb29mQGRheXJlcC5jb20iLCJQYXNzd29yZCI6IkllcGh1Y2U5amllIn0.qG9oYpdRoa8Vb6FcvQP1D4C_uPL3B9g75heDByFEl9k 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Muhanna Maloof to Excel.
+ERROR - Failed to update transaction status: 
+INFO - Completed iteration 3.
+INFO - Ending the main processing loop.
+INFO - Run completed. Total time taken: 46.50 seconds.
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 15:41:39.244061
+
+INFO - start set options for driver.
+WARNING - Run stop (Error happened). Total time taken: 2.66 seconds.
+ERROR - Unexpected error occurred: Header part (5218441) from ('X-UIPATH-OrganizationUnitId', 5218441) must be of type str or bytes, not <class 'int'>
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 15:42:50.420294
+
+INFO - start set options for driver.
+WARNING - Run stop (Error happened). Total time taken: 23.42 seconds.
+ERROR - Unexpected error occurred: Failed to fetch asset 'start range of random number': {"message":"An organization unit is required for this action.","errorCode":1101,"traceId":"00-bb09f1047fcfa4e6d09d029bcaa79d57-f7b8121d11acdc1f-00"}
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 15:47:25.200471
+
+INFO - start set options for driver.
+WARNING - Run stop (Error happened). Total time taken: 23.17 seconds.
+ERROR - Unexpected error occurred: Failed to fetch asset 'start range of random number': {"message":"You are not authenticated!","errorCode":0,"result":null,"targetUrl":null,"success":false,"error":{"code":0,"message":"You are not authenticated!","details":"You should be authenticated (sign in) in order to perform this operation.","validationErrors":null},"unAuthorizedRequest":true,"__abp":true}
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 15:49:04.441689
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID e33ef079ceb6486a93d5129796de45f6 to queue.
+INFO - Successfully added GUID 3089714b54044d7bbbc3514f03c79197 to queue.
+INFO - Successfully added GUID 5fb4b120fc314508b6384c94ba40ee95 to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 2 and 4: is 3
+INFO - this process will retry 3 times
+INFO - Starting the main processing loop.
+INFO - Fetched transaction details: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': 'b1754867-a2d7-420d-ac98-98c8c567ca58', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': 'b1754867-a2d7-420d-ac98-98c8c567ca58', 'SpecificData': '{"DynamicProperties":{"GUID":"5fb4b120fc314508b6384c94ba40ee95"}}', 'CreationTime': '2024-05-28T12:50:45.423Z', 'Progress': None, 'RowVersion': 'AAAAAEGbAOU=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945063, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441998602, 'ProcessingException': None, 'SpecificContent': {'GUID': '5fb4b120fc314508b6384c94ba40ee95'}, 'Output': None, 'Analytics': None}
+INFO - 
+-------------------------------------------
+INFO - iteration number : 1
+INFO - Full Name : Lateefa Muslimah Ganem
+INFO - first Name : Lateefa
+INFO - last Name : Ganem
+INFO - Mother's Maiden Name : Almasi
+INFO - Phone : 76 635 770
+INFO - Country Code : 216
+INFO - Birthdate : October 29, 1946
+INFO - Company : Food Fair
+INFO - Favorite Color : Orange
+INFO - Email Address : LateefaMuslimahGanem@dayrep.com:
+INFO - Password : Ero9iu1Ingae
+INFO - GUID : 5fb4b120fc314508b6384c94ba40ee95
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY5MDA1OTMsImV4cCI6MTc0ODQzNjU5MywiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJMYXRlZWZhIiwiTGFzdCBOYW1lIjoiR2FuZW0iLCJNb3RoZXIncyBNYWlkZW4gTmFtZSI6IkFsbWFzaSIsIlBIT05FIjoiNzYgNjM1IDc3MCIsIkNvdW50cnkgQ29kZSI6IjIxNiIsIkJpcnRoZGF0ZSI6Ik9jdG9iZXIgMjksIDE5NDYiLCJDb21wYW55IjoiRm9vZCBGYWlyIiwiRmF2b3JpdGUgQ29sb3IiOiJPcmFuZ2UiLCJFbWFpbCBBZGRyZXNzIjoiTGF0ZWVmYU11c2xpbWFoR2FuZW1AZGF5cmVwLmNvbSIsIlBhc3N3b3JkIjoiRXJvOWl1MUluZ2FlIn0.Dom19H0TAEX381hZoHc_5chS6ZMU--N99K7p7Dx_3Kk 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Lateefa Ganem to Excel.
+INFO - Completed iteration 1.
+INFO - Fetched transaction details: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': 'b1754867-a2d7-420d-ac98-98c8c567ca58', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': 'b1754867-a2d7-420d-ac98-98c8c567ca58', 'SpecificData': '{"DynamicProperties":{"GUID":"5fb4b120fc314508b6384c94ba40ee95"}}', 'CreationTime': '2024-05-28T12:50:45.423Z', 'Progress': None, 'RowVersion': 'AAAAAEGbAOU=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945063, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441998602, 'ProcessingException': None, 'SpecificContent': {'GUID': '5fb4b120fc314508b6384c94ba40ee95'}, 'Output': None, 'Analytics': None}
+INFO - 
+-------------------------------------------
+INFO - iteration number : 2
+INFO - Full Name : Maliha Lateefa Kanaan
+INFO - first Name : Maliha
+INFO - last Name : Kanaan
+INFO - Mother's Maiden Name : Samaha
+INFO - Phone : 76 795 580
+INFO - Country Code : 216
+INFO - Birthdate : February 19, 1991
+INFO - Company : Sam Goody
+INFO - Favorite Color : Yellow
+INFO - Email Address : MalihaLateefaKanaan@teleworm.us:
+INFO - Password : eegh4gu7uKe
+INFO - GUID : 5fb4b120fc314508b6384c94ba40ee95
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY5MDA1OTMsImV4cCI6MTc0ODQzNjU5MywiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJNYWxpaGEiLCJMYXN0IE5hbWUiOiJLYW5hYW4iLCJNb3RoZXIncyBNYWlkZW4gTmFtZSI6IlNhbWFoYSIsIlBIT05FIjoiNzYgNzk1IDU4MCIsIkNvdW50cnkgQ29kZSI6IjIxNiIsIkJpcnRoZGF0ZSI6IkZlYnJ1YXJ5IDE5LCAxOTkxIiwiQ29tcGFueSI6IlNhbSBHb29keSIsIkZhdm9yaXRlIENvbG9yIjoiWWVsbG93IiwiRW1haWwgQWRkcmVzcyI6Ik1hbGloYUxhdGVlZmFLYW5hYW5AdGVsZXdvcm0udXMiLCJQYXNzd29yZCI6ImVlZ2g0Z3U3dUtlIn0.oAdUCgsmIQh6ieorLojyYMZ3gEJtBcfH6oNdqJKrs-A 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Maliha Kanaan to Excel.
+INFO - Completed iteration 2.
+INFO - Fetched transaction details: {'AncestorUniqueKey': None, 'ManualAncestorUniqueKey': None, 'RobotId': None, 'ParentOperationId': None, 'OperationId': None, 'OutputData': None, 'AnalyticsData': None, 'ReviewerUserId': None, 'Key': 'b1754867-a2d7-420d-ac98-98c8c567ca58', 'Reference': None, 'DueDate': None, 'RiskSlaDate': None, 'DeferDate': None, 'StartProcessing': None, 'EndProcessing': None, 'SecondsInPreviousAttempts': 0, 'AncestorId': None, 'ManualAncestorId': None, 'RetryNumber': 0, 'ManualRetryNumber': 0, 'UniqueKey': 'b1754867-a2d7-420d-ac98-98c8c567ca58', 'SpecificData': '{"DynamicProperties":{"GUID":"5fb4b120fc314508b6384c94ba40ee95"}}', 'CreationTime': '2024-05-28T12:50:45.423Z', 'Progress': None, 'RowVersion': 'AAAAAEGbAOU=', 'OrganizationUnitId': 5218441, 'OrganizationUnitFullyQualifiedName': 'fake users', 'QueueDefinitionId': 945063, 'Encrypted': False, 'Status': 'New', 'ReviewStatus': 'None', 'ProcessingExceptionType': None, 'Priority': 'High', 'HasVideoRecorded': False, 'Id': 441998602, 'ProcessingException': None, 'SpecificContent': {'GUID': '5fb4b120fc314508b6384c94ba40ee95'}, 'Output': None, 'Analytics': None}
+INFO - 
+-------------------------------------------
+INFO - iteration number : 3
+INFO - Full Name : Durriyah Layan Naifeh
+INFO - first Name : Durriyah
+INFO - last Name : Naifeh
+INFO - Mother's Maiden Name : Kassab
+INFO - Phone : 71 701 109
+INFO - Country Code : 216
+INFO - Birthdate : June 14, 1942
+INFO - Company : Noodle Kidoodle
+INFO - Favorite Color : Blue
+INFO - Email Address : DurriyahLayanNaifeh@dayrep.com:
+INFO - Password : vu7Neequei
+INFO - GUID : 5fb4b120fc314508b6384c94ba40ee95
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY5MDA1OTMsImV4cCI6MTc0ODQzNjU5MywiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJEdXJyaXlhaCIsIkxhc3QgTmFtZSI6Ik5haWZlaCIsIk1vdGhlcidzIE1haWRlbiBOYW1lIjoiS2Fzc2FiIiwiUEhPTkUiOiI3MSA3MDEgMTA5IiwiQ291bnRyeSBDb2RlIjoiMjE2IiwiQmlydGhkYXRlIjoiSnVuZSAxNCwgMTk0MiIsIkNvbXBhbnkiOiJOb29kbGUgS2lkb29kbGUiLCJGYXZvcml0ZSBDb2xvciI6IkJsdWUiLCJFbWFpbCBBZGRyZXNzIjoiRHVycml5YWhMYXlhbk5haWZlaEBkYXlyZXAuY29tIiwiUGFzc3dvcmQiOiJ2dTdOZWVxdWVpIn0.XaezbfDS-Ur2rnOyJBtfqAJNF4uoqZ_wETne3oXOPoQ 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Durriyah Naifeh to Excel.
+INFO - Completed iteration 3.
+INFO - Ending the main processing loop.
+INFO - Run completed. Total time taken: 196.12 seconds.
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 15:57:34.209304
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+ERROR - Page load timed out, trying to refresh.
+INFO - Setting up initial configurations on each website.
+WARNING - Run stop (Error happened). Total time taken: 54.56 seconds.
+ERROR - Unexpected error occurred: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="txtCount"]"}
+  (Session info: chrome=125.0.6422.78); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F5D41F22+60322]
+	(No symbol) [0x00007FF6F5CBCE99]
+	(No symbol) [0x00007FF6F5B77EBA]
+	(No symbol) [0x00007FF6F5BC7676]
+	(No symbol) [0x00007FF6F5BC773C]
+	(No symbol) [0x00007FF6F5C0E967]
+	(No symbol) [0x00007FF6F5BEC25F]
+	(No symbol) [0x00007FF6F5C0BC80]
+	(No symbol) [0x00007FF6F5BEBFC3]
+	(No symbol) [0x00007FF6F5BB9617]
+	(No symbol) [0x00007FF6F5BBA211]
+	GetHandleVerifier [0x00007FF6F605946D+3301613]
+	GetHandleVerifier [0x00007FF6F60A3693+3605267]
+	GetHandleVerifier [0x00007FF6F6099410+3563664]
+	GetHandleVerifier [0x00007FF6F5DF42F6+790390]
+	(No symbol) [0x00007FF6F5CC74DF]
+	(No symbol) [0x00007FF6F5CC33D4]
+	(No symbol) [0x00007FF6F5CC3562]
+	(No symbol) [0x00007FF6F5CB2F6F]
+	BaseThreadInitThunk [0x00007FFA2E31257D+29]
+	RtlUserThreadStart [0x00007FFA2FB0AA48+40]
+
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 16:03:02.940363
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID 5d69304bd77e4bbab73fb6007e415d22 to queue.
+INFO - Successfully added GUID c70f316902804a2f9bd558ebe09349f5 to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 2 and 3: is 2
+INFO - this process will retry 2 times
+INFO - Starting the main processing loop.
+INFO - 
+-------------------------------------------
+INFO - iteration number : 1
+INFO - Full Name : 'Awatif Rawdah Daher
+INFO - first Name : 'Awatif
+INFO - last Name : Daher
+INFO - Mother's Maiden Name : Sabbagh
+INFO - Phone : 74 884 212
+INFO - Country Code : 216
+INFO - Birthdate : December 7, 2002
+INFO - Company : Vibrant Man
+INFO - Favorite Color : Purple
+INFO - Email Address : AwatifRawdahDaher@teleworm.us:
+INFO - Password : Gahng1pee
+INFO - GUID : c70f316902804a2f9bd558ebe09349f5
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY5MDEzOTAsImV4cCI6MTc0ODQzNzM5MCwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiInQXdhdGlmIiwiTGFzdCBOYW1lIjoiRGFoZXIiLCJNb3RoZXIncyBNYWlkZW4gTmFtZSI6IlNhYmJhZ2giLCJQSE9ORSI6Ijc0IDg4NCAyMTIiLCJDb3VudHJ5IENvZGUiOiIyMTYiLCJCaXJ0aGRhdGUiOiJEZWNlbWJlciA3LCAyMDAyIiwiQ29tcGFueSI6IlZpYnJhbnQgTWFuIiwiRmF2b3JpdGUgQ29sb3IiOiJQdXJwbGUiLCJFbWFpbCBBZGRyZXNzIjoiQXdhdGlmUmF3ZGFoRGFoZXJAdGVsZXdvcm0udXMiLCJQYXNzd29yZCI6IkdhaG5nMXBlZSJ9.BJ1UKqY4FD2fJlJAl7HEcQabrVORYhbbuB9QPdP_cr8 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for 'Awatif Daher to Excel.
+INFO - Completed iteration 1.
+INFO - 
+-------------------------------------------
+INFO - iteration number : 2
+INFO - Full Name : Ghaada Is'ad Attia
+INFO - first Name : Ghaada
+INFO - last Name : Attia
+INFO - Mother's Maiden Name : Awad
+INFO - Phone : 72 388 672
+INFO - Country Code : 216
+INFO - Birthdate : September 20, 1961
+INFO - Company : The Royal Canadian Pancake Houses
+INFO - Favorite Color : Blue
+INFO - Email Address : GhaadaIsadAttia@jourrapide.com:
+INFO - Password : gudeeWei2ugh
+INFO - GUID : c70f316902804a2f9bd558ebe09349f5
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY5MDEzOTAsImV4cCI6MTc0ODQzNzM5MCwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJHaGFhZGEiLCJMYXN0IE5hbWUiOiJBdHRpYSIsIk1vdGhlcidzIE1haWRlbiBOYW1lIjoiQXdhZCIsIlBIT05FIjoiNzIgMzg4IDY3MiIsIkNvdW50cnkgQ29kZSI6IjIxNiIsIkJpcnRoZGF0ZSI6IlNlcHRlbWJlciAyMCwgMTk2MSIsIkNvbXBhbnkiOiJUaGUgUm95YWwgQ2FuYWRpYW4gUGFuY2FrZSBIb3VzZXMiLCJGYXZvcml0ZSBDb2xvciI6IkJsdWUiLCJFbWFpbCBBZGRyZXNzIjoiR2hhYWRhSXNhZEF0dGlhQGpvdXJyYXBpZGUuY29tIiwiUGFzc3dvcmQiOiJndWRlZVdlaTJ1Z2gifQ.t9dQQRAO7bqdg51ygAQQc45TdGOqtQIzmEb54AlxNZg 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Ghaada Attia to Excel.
+INFO - Completed iteration 2.
+INFO - Ending the main processing loop.
+INFO - Run completed. Total time taken: 37.48 seconds.
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 16:05:41.227488
+
+INFO - start set options for driver.
+WARNING - Run stop (Error happened). Total time taken: 2.15 seconds.
+ERROR - Unexpected error occurred: Failed to fetch asset 'start range of random number': {"message":"You are not authenticated!","errorCode":0,"result":null,"targetUrl":null,"success":false,"error":{"code":0,"message":"You are not authenticated!","details":"You should be authenticated (sign in) in order to perform this operation.","validationErrors":null},"unAuthorizedRequest":true,"__abp":true}
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 16:06:42.904569
+
+INFO - start set options for driver.
+WARNING - Run stop (Error happened). Total time taken: 23.22 seconds.
+ERROR - Unexpected error occurred: Failed to fetch asset 'start range of random number': {"message":"You are not authenticated!","errorCode":0,"result":null,"targetUrl":null,"success":false,"error":{"code":0,"message":"You are not authenticated!","details":"You should be authenticated (sign in) in order to perform this operation.","validationErrors":null},"unAuthorizedRequest":true,"__abp":true}
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 16:08:45.265647
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID 5b22d661318e47faab14e431ee8f0890 to queue.
+INFO - Successfully added GUID b5b3de042fd54f898f2d4452c26421a8 to queue.
+INFO - Successfully added GUID ffb32c7485d244218dd1d48827aa2860 to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 2 and 3: is 3
+INFO - this process will retry 3 times
+INFO - Starting the main processing loop.
+INFO - 
+-------------------------------------------
+INFO - iteration number : 1
+INFO - Full Name : Badriyah Zinah Moghadam
+INFO - first Name : Badriyah
+INFO - last Name : Moghadam
+INFO - Mother's Maiden Name : Srour
+INFO - Phone : 71 295 932
+INFO - Country Code : 216
+INFO - Birthdate : May 25, 1984
+INFO - Company : Skaggs-Alpha Beta
+INFO - Favorite Color : Blue
+INFO - Email Address : BadriyahZinahMoghadam@dayrep.com:
+INFO - Password : Aideihe4uko7
+INFO - GUID : ffb32c7485d244218dd1d48827aa2860
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY5MDE3NzUsImV4cCI6MTc0ODQzNzc3NSwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJCYWRyaXlhaCIsIkxhc3QgTmFtZSI6Ik1vZ2hhZGFtIiwiTW90aGVyJ3MgTWFpZGVuIE5hbWUiOiJTcm91ciIsIlBIT05FIjoiNzEgMjk1IDkzMiIsIkNvdW50cnkgQ29kZSI6IjIxNiIsIkJpcnRoZGF0ZSI6Ik1heSAyNSwgMTk4NCIsIkNvbXBhbnkiOiJTa2FnZ3MtQWxwaGEgQmV0YSIsIkZhdm9yaXRlIENvbG9yIjoiQmx1ZSIsIkVtYWlsIEFkZHJlc3MiOiJCYWRyaXlhaFppbmFoTW9naGFkYW1AZGF5cmVwLmNvbSIsIlBhc3N3b3JkIjoiQWlkZWloZTR1a283In0.E0i4DLOboUxjBKEnYejiz1PHVtgNTRRDhK-n8i6fDKw 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Badriyah Moghadam to Excel.
+INFO - Completed iteration 1.
+INFO - 
+-------------------------------------------
+INFO - iteration number : 2
+INFO - Full Name : Abdul-Shakur Ayham Ganem
+INFO - first Name : Abdul-Shakur
+INFO - last Name : Ganem
+INFO - Mother's Maiden Name : Maalouf
+INFO - Phone : 73 405 384
+INFO - Country Code : 216
+INFO - Birthdate : June 11, 1961
+INFO - Company : Sunburst Garden Management
+INFO - Favorite Color : Blue
+INFO - Email Address : Abdul-ShakurAyhamGanem@armyspy.com:
+INFO - Password : Yieshai1Die
+INFO - GUID : ffb32c7485d244218dd1d48827aa2860
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY5MDE3NzUsImV4cCI6MTc0ODQzNzc3NSwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJBYmR1bC1TaGFrdXIiLCJMYXN0IE5hbWUiOiJHYW5lbSIsIk1vdGhlcidzIE1haWRlbiBOYW1lIjoiTWFhbG91ZiIsIlBIT05FIjoiNzMgNDA1IDM4NCIsIkNvdW50cnkgQ29kZSI6IjIxNiIsIkJpcnRoZGF0ZSI6Ikp1bmUgMTEsIDE5NjEiLCJDb21wYW55IjoiU3VuYnVyc3QgR2FyZGVuIE1hbmFnZW1lbnQiLCJGYXZvcml0ZSBDb2xvciI6IkJsdWUiLCJFbWFpbCBBZGRyZXNzIjoiQWJkdWwtU2hha3VyQXloYW1HYW5lbUBhcm15c3B5LmNvbSIsIlBhc3N3b3JkIjoiWWllc2hhaTFEaWUifQ.ZKSPh0c-ofMa2VzKW-XqasBzAg3x701TcEoQ6hEAhL0 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Abdul-Shakur Ganem to Excel.
+INFO - Completed iteration 2.
+INFO - 
+-------------------------------------------
+INFO - iteration number : 3
+INFO - Full Name : Zuhur Jun Shadid
+INFO - first Name : Zuhur
+INFO - last Name : Shadid
+INFO - Mother's Maiden Name : Hakimi
+INFO - Phone : 78 146 107
+INFO - Country Code : 216
+INFO - Birthdate : August 17, 1959
+INFO - Company : Wells & Wade
+INFO - Favorite Color : Green
+INFO - Email Address : ZuhurJunShadid@dayrep.com:
+INFO - Password : ooC7ainge
+INFO - GUID : ffb32c7485d244218dd1d48827aa2860
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY5MDE3NzUsImV4cCI6MTc0ODQzNzc3NSwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJadWh1ciIsIkxhc3QgTmFtZSI6IlNoYWRpZCIsIk1vdGhlcidzIE1haWRlbiBOYW1lIjoiSGFraW1pIiwiUEhPTkUiOiI3OCAxNDYgMTA3IiwiQ291bnRyeSBDb2RlIjoiMjE2IiwiQmlydGhkYXRlIjoiQXVndXN0IDE3LCAxOTU5IiwiQ29tcGFueSI6IldlbGxzICYgV2FkZSIsIkZhdm9yaXRlIENvbG9yIjoiR3JlZW4iLCJFbWFpbCBBZGRyZXNzIjoiWnVodXJKdW5TaGFkaWRAZGF5cmVwLmNvbSIsIlBhc3N3b3JkIjoib29DN2FpbmdlIn0.juadoq_NWCff0oaM3V5FROZEDYQ5eNBdRibRqkWZLTA 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Zuhur Shadid to Excel.
+INFO - Completed iteration 3.
+INFO - Ending the main processing loop.
+INFO - Run completed. Total time taken: 215.66 seconds.
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 16:14:31.367800
+
+INFO - start set options for driver.
+WARNING - Run stop (Error happened). Total time taken: 23.38 seconds.
+ERROR - Unexpected error occurred: Failed to fetch asset 'start range of random number': {"message":"An organization unit is required for this action.","errorCode":1101,"traceId":"00-ff5fc2a55299a5a256c79d4189cbbfd8-2c98ab75001376eb-00"}
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 16:16:31.186494
+
+INFO - start set options for driver.
+WARNING - Run stop (Error happened). Total time taken: 23.11 seconds.
+ERROR - Unexpected error occurred: Failed to fetch asset 'start range of random number': {"message":"You are not authenticated!","errorCode":0,"result":null,"targetUrl":null,"success":false,"error":{"code":0,"message":"You are not authenticated!","details":"You should be authenticated (sign in) in order to perform this operation.","validationErrors":null},"unAuthorizedRequest":true,"__abp":true}
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 16:19:36.427361
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID 5de5ae8f12474e3ebd8fb565df3071a8 to queue.
+INFO - Successfully added GUID ea8ce15e566a4ca180c3f7fee62276b8 to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 1 and 2: is 2
+INFO - this process will retry 2 times
+INFO - Starting the main processing loop.
+INFO - 
+-------------------------------------------
+INFO - iteration number : 1
+INFO - Full Name : Sa'd al Din Abdul-Hasib Harb
+INFO - first Name : Sa'd
+INFO - last Name : Harb
+INFO - Mother's Maiden Name : Tahan
+INFO - Phone : 72 138 660
+INFO - Country Code : 216
+INFO - Birthdate : May 10, 1947
+INFO - Company : Quickbiz
+INFO - Favorite Color : Purple
+INFO - Email Address : SadalDinAbdul-HasibHarb@armyspy.com:
+INFO - Password : Pohj8rua7oh
+INFO - GUID : ea8ce15e566a4ca180c3f7fee62276b8
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY5MDI0MjUsImV4cCI6MTc0ODQzODQyNSwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJTYSdkIiwiTGFzdCBOYW1lIjoiSGFyYiIsIk1vdGhlcidzIE1haWRlbiBOYW1lIjoiVGFoYW4iLCJQSE9ORSI6IjcyIDEzOCA2NjAiLCJDb3VudHJ5IENvZGUiOiIyMTYiLCJCaXJ0aGRhdGUiOiJNYXkgMTAsIDE5NDciLCJDb21wYW55IjoiUXVpY2tiaXoiLCJGYXZvcml0ZSBDb2xvciI6IlB1cnBsZSIsIkVtYWlsIEFkZHJlc3MiOiJTYWRhbERpbkFiZHVsLUhhc2liSGFyYkBhcm15c3B5LmNvbSIsIlBhc3N3b3JkIjoiUG9oajhydWE3b2gifQ.PxXrLmpKlHt3j1JayY0uBBmw_KU9P2knzGFG3nPMEmE 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Sa'd Harb to Excel.
+INFO - Completed iteration 1.
+INFO - 
+-------------------------------------------
+INFO - iteration number : 2
+INFO - Full Name : Zainab Sumaira Daher
+INFO - first Name : Zainab
+INFO - last Name : Daher
+INFO - Mother's Maiden Name : Shalhoub
+INFO - Phone : 76 917 958
+INFO - Country Code : 216
+INFO - Birthdate : May 20, 1952
+INFO - Company : All Wound Up
+INFO - Favorite Color : Purple
+INFO - Email Address : ZainabSumairaDaher@armyspy.com:
+INFO - Password : ooPahj7Oo
+INFO - GUID : ea8ce15e566a4ca180c3f7fee62276b8
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY5MDI0MjUsImV4cCI6MTc0ODQzODQyNSwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJaYWluYWIiLCJMYXN0IE5hbWUiOiJEYWhlciIsIk1vdGhlcidzIE1haWRlbiBOYW1lIjoiU2hhbGhvdWIiLCJQSE9ORSI6Ijc2IDkxNyA5NTgiLCJDb3VudHJ5IENvZGUiOiIyMTYiLCJCaXJ0aGRhdGUiOiJNYXkgMjAsIDE5NTIiLCJDb21wYW55IjoiQWxsIFdvdW5kIFVwIiwiRmF2b3JpdGUgQ29sb3IiOiJQdXJwbGUiLCJFbWFpbCBBZGRyZXNzIjoiWmFpbmFiU3VtYWlyYURhaGVyQGFybXlzcHkuY29tIiwiUGFzc3dvcmQiOiJvb1BhaGo3T28ifQ.kduId1IaumaKwfZpXXpXUziz957TKB6SY3qoeBow9qQ 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Zainab Daher to Excel.
+INFO - Completed iteration 2.
+INFO - Ending the main processing loop.
+INFO - Run completed. Total time taken: 161.95 seconds.
+.
+.
+.
+.
+.
+INFO - 			Running at 2024-05-28 16:23:18.300157
+
+INFO - start set options for driver.
+INFO - Start opening initial URLs.
+INFO - Setting up initial configurations on each website.
+INFO - Successfully added GUID f3c9773e90f24fa38ecf461db9a73ef4 to queue.
+INFO - End Setting.
+INFO - The Random number Generated between 1 and 2: is 1
+INFO - this process will retry 1 times
+INFO - Starting the main processing loop.
+INFO - 
+-------------------------------------------
+INFO - iteration number : 1
+INFO - Full Name : Sabriyah Rawiah Said
+INFO - first Name : Sabriyah
+INFO - last Name : Said
+INFO - Mother's Maiden Name : Bishara
+INFO - Phone : 73 532 768
+INFO - Country Code : 216
+INFO - Birthdate : December 13, 1983
+INFO - Company : Sears Homelife
+INFO - Favorite Color : Yellow
+INFO - Email Address : SabriyahRawiahSaid@teleworm.us:
+INFO - Password : Maz9eigohxoh
+INFO - GUID : f3c9773e90f24fa38ecf461db9a73ef4
+INFO - JTW :eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MTY5MDI2MDcsImV4cCI6MTc0ODQzODYwNywiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkZpcnN0IE5hbWUiOiJTYWJyaXlhaCIsIkxhc3QgTmFtZSI6IlNhaWQiLCJNb3RoZXIncyBNYWlkZW4gTmFtZSI6IkJpc2hhcmEiLCJQSE9ORSI6IjczIDUzMiA3NjgiLCJDb3VudHJ5IENvZGUiOiIyMTYiLCJCaXJ0aGRhdGUiOiJEZWNlbWJlciAxMywgMTk4MyIsIkNvbXBhbnkiOiJTZWFycyBIb21lbGlmZSIsIkZhdm9yaXRlIENvbG9yIjoiWWVsbG93IiwiRW1haWwgQWRkcmVzcyI6IlNhYnJpeWFoUmF3aWFoU2FpZEB0ZWxld29ybS51cyIsIlBhc3N3b3JkIjoiTWF6OWVpZ29oeG9oIn0.Y8cVBbuHT5kgJ3Q5myfDrtCf3-u-kAaEmHPgsSR8S4M 
+INFO - 
+-------------------------------------------
+INFO - Successfully saved data for Sabriyah Said to Excel.
+INFO - Completed iteration 1.
+INFO - Ending the main processing loop.
+INFO - Run completed. Total time taken: 35.57 seconds.
+.
+.
+.
+.
+.
